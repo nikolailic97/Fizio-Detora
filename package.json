@@ -1,0 +1,26 @@
+{
+  "name": "klinika-template",
+  "version": "1.0.0",
+  "description": "> Soft UI / Bento Grid / High Accessibility   > Stack: HTML5 + Tailwind CSS (Play CDN) + Vanilla JS",
+  "main": "index.js",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "scripts": {
+    "dev":   "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
+    "build": "tailwindcss -i ./css/input.css -o ./css/output.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolailic97/Fizio-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nikolailic97/Fizio-template/issues"
+  },
+  "homepage": "https://github.com/nikolailic97/Fizio-template#readme"
+}
