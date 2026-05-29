@@ -1,29 +1,13 @@
-/**
- * FizioKid – Klinički Template
- * main.js — Vanilla JS, bez dependencija
- *
- * Sadržaj:
- *  1. Navbar — scroll efekat + aktivni link (scroll spy)
- *  2. Hamburger / Mobile meni
- *  3. Reveal animacije — Intersection Observer
- *  4. Testimonials Slider — touch/swipe podrška
- *  5. FAQ Accordion
- *  6. Kontakt forma — client-side validacija
- *  7. Scroll-to-top dugme
- *  8. Smooth anchor close (zatvara mobile meni pri kliku)
- */
-
 'use strict';
 
 // ================================================================
-// 1. NAVBAR — scroll efekat + scroll spy
+// 1. NAVBAR
 // ================================================================
 (function initNavbar() {
   const navbar   = document.getElementById('navbar');
-  const sections = document.querySelectorAll('main section[id]');
+  const sections = document.querySelectorAll('main section[id], #o-timu');
   const navLinks = document.querySelectorAll('.nav-link');
 
-  // Dodaj/ukloni klasu .scrolled pri skrolovanju
   function onScroll() {
     if (window.scrollY > 20) {
       navbar.classList.add('scrolled');
@@ -31,7 +15,6 @@
       navbar.classList.remove('scrolled');
     }
 
-    // Scroll spy — aktiviraj link koji odgovara vidljivoj sekciji
     let currentSection = '';
     sections.forEach(section => {
       const sectionTop = section.offsetTop - 100;
@@ -48,9 +31,8 @@
     });
   }
 
-  // Passive listener za bolji scroll performance
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll(); // Inicijalni poziv
+  onScroll();
 })();
 
 // ================================================================
@@ -76,7 +58,6 @@
     }
   });
 
-  // Zatvori meni klikom na link unutar njega
   mobileMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.add('hidden');
@@ -85,7 +66,6 @@
     });
   });
 
-  // Zatvori meni klikom van njega
   document.addEventListener('click', (e) => {
     if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
       mobileMenu.classList.add('hidden');
@@ -96,10 +76,9 @@
 })();
 
 // ================================================================
-// 3. REVEAL ANIMACIJE — Intersection Observer
+// 3. REVEAL ANIMACIJE
 // ================================================================
 (function initReveal() {
-  // Ako korisnik želi redukovano kretanje, preskočimo animacije
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const revealEls = document.querySelectorAll('.reveal');
@@ -109,11 +88,11 @@
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target); // Animiramo samo jednom
+        observer.unobserve(entry.target);
       }
     });
   }, {
-    threshold: 0.12,     // Element mora biti 12% vidljiv
+    threshold: 0.12,
     rootMargin: '0px 0px -40px 0px'
   });
 
@@ -122,10 +101,6 @@
 
 // ================================================================
 // 4. TESTIMONIALS SLIDER
-//    - Automatsko napredovanje
-//    - Touch/swipe podrška
-//    - Taster navigacija
-//    - Dinamički dots indikatori
 // ================================================================
 (function initSlider() {
   const track   = document.getElementById('slider-track');
@@ -145,7 +120,6 @@
   let touchStartX = 0;
   let isDragging  = false;
 
-  // ---- Kreiraj dots ----
   slides.forEach((_, i) => {
     const dot = document.createElement('button');
     dot.className = `slider-dot ${i === 0 ? 'active' : ''}`;
@@ -156,34 +130,28 @@
     dotsContainer.appendChild(dot);
   });
 
-  // ---- Idi na slide ----
   function goTo(index) {
     current = (index + total) % total;
     track.style.transform = `translateX(-${current * 100}%)`;
 
-    // Ažuriraj dots
     dotsContainer.querySelectorAll('.slider-dot').forEach((dot, i) => {
       dot.classList.toggle('active', i === current);
       dot.setAttribute('aria-selected', i === current ? 'true' : 'false');
     });
 
-    // Ažuriraj aria-label na track-u za screen readere
     slides.forEach((slide, i) => {
       slide.setAttribute('aria-hidden', i !== current ? 'true' : 'false');
     });
   }
 
-  // ---- Navigacija ----
   if (prevBtn) prevBtn.addEventListener('click', () => { resetAuto(); goTo(current - 1); });
   if (nextBtn) nextBtn.addEventListener('click', () => { resetAuto(); goTo(current + 1); });
 
-  // ---- Keyboard navigacija ----
   wrapper.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft')  { resetAuto(); goTo(current - 1); }
     if (e.key === 'ArrowRight') { resetAuto(); goTo(current + 1); }
   });
 
-  // ---- Touch/Swipe ----
   wrapper.addEventListener('touchstart', (e) => {
     touchStartX = e.changedTouches[0].clientX;
     isDragging = true;
@@ -199,7 +167,6 @@
     }
   }, { passive: true });
 
-  // ---- Auto-play ----
   function startAuto() {
     autoTimer = setInterval(() => goTo(current + 1), 5500);
   }
@@ -208,11 +175,9 @@
     startAuto();
   }
 
-  // Pauziraj auto-play kada korisnik hover-uje
   wrapper.addEventListener('mouseenter', () => clearInterval(autoTimer));
   wrapper.addEventListener('mouseleave', () => startAuto());
 
-  // Pauziraj kada tab nije aktivan (štedi resurse)
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) clearInterval(autoTimer);
     else startAuto();
@@ -236,13 +201,11 @@
 
     if (!trigger || !content) return;
 
-    // Postavi hidden klasu inicijalno
     content.classList.add('hidden');
 
     trigger.addEventListener('click', () => {
       const isOpen = item.classList.contains('is-open');
 
-      // Zatvori sve ostale (accordion ponašanje — jedan otvoren istovremeno)
       faqItems.forEach(otherItem => {
         if (otherItem !== item && otherItem.classList.contains('is-open')) {
           otherItem.classList.remove('is-open');
@@ -250,14 +213,12 @@
           const otherTrigger = otherItem.querySelector('.faq-trigger');
           if (otherContent) {
             otherContent.classList.remove('is-open');
-            // Mali delay pa sakrij (da animacija završi)
             setTimeout(() => otherContent.classList.add('hidden'), 350);
           }
           if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
         }
       });
 
-      // Toggle trenutnog
       if (isOpen) {
         item.classList.remove('is-open');
         content.classList.remove('is-open');
@@ -265,7 +226,6 @@
         setTimeout(() => content.classList.add('hidden'), 350);
       } else {
         content.classList.remove('hidden');
-        // Requestujemo animation frame da DOM processuje display pre CSS tranzicije
         requestAnimationFrame(() => {
           requestAnimationFrame(() => {
             item.classList.add('is-open');
@@ -276,8 +236,6 @@
       }
     });
 
-    // Keyboard: Enter i Space aktiviraju dugme (browser default za button)
-    // Već je podržano jer je element <button>, ali dodajemo Escape za zatvaranje
     trigger.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && item.classList.contains('is-open')) {
         trigger.click();
@@ -288,70 +246,49 @@
 })();
 
 // ================================================================
-// 6. KONTAKT FORMA — Client-side validacija + submit
+// 6. KONTAKT FORMA
 // ================================================================
 (function initContactForm() {
-  const form    = document.getElementById('contact-form');
-  const msgBox  = document.getElementById('form-message');
+  const form      = document.getElementById('contact-form');
+  const msgBox    = document.getElementById('form-message');
   const submitBtn = document.getElementById('submit-btn');
 
   if (!form) return;
 
-  // ---- Validacija pojedinog polja ----
   function validateField(field) {
     const value = field.value.trim();
     let isValid = true;
-
     field.classList.remove('border-red-300', 'border-green-300');
-
-    if (field.hasAttribute('required') && !value) {
-      isValid = false;
-    }
-    if (field.type === 'email' && value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-      isValid = false;
-    }
-    if (field.type === 'tel' && value && !/^[+\d\s\-().]{7,20}$/.test(value)) {
-      isValid = false;
-    }
-    if (field.type === 'checkbox' && field.hasAttribute('required') && !field.checked) {
-      isValid = false;
-    }
-
-    if (!isValid) {
-      field.classList.add('border-red-300');
-    } else if (value || field.type === 'checkbox') {
-      field.classList.add('border-green-300');
-    }
-
+    if (field.hasAttribute('required') && !value) isValid = false;
+    if (field.type === 'email' && value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) isValid = false;
+    if (field.type === 'tel'   && value && !/^[+\d\s\-().]{7,20}$/.test(value)) isValid = false;
+    if (field.type === 'checkbox' && field.hasAttribute('required') && !field.checked) isValid = false;
+    if (!isValid) field.classList.add('border-red-300');
+    else if (value || field.type === 'checkbox') field.classList.add('border-green-300');
     return isValid;
   }
 
-  // Real-time validacija na blur
   form.querySelectorAll('input, textarea, select').forEach(field => {
-    field.addEventListener('blur', () => validateField(field));
-    field.addEventListener('input', () => {
-      if (field.classList.contains('border-red-300')) validateField(field);
-    });
+    field.addEventListener('blur',  () => validateField(field));
+    field.addEventListener('input', () => { if (field.classList.contains('border-red-300')) validateField(field); });
   });
 
-  // ---- Submit ----
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Validiraj sva polja
-    const fields  = form.querySelectorAll('input, textarea, select');
-    let allValid  = true;
-    fields.forEach(field => {
-      if (!validateField(field)) allValid = false;
-    });
+    const fields = form.querySelectorAll('input, textarea, select');
+    let allValid = true;
+    fields.forEach(field => { if (!validateField(field)) allValid = false; });
 
     if (!allValid) {
       showMessage('Molimo vas popunite sva obavezna polja ispravno.', 'error');
-      // Fokusiraj prvo pogrešno polje
       const firstError = form.querySelector('.border-red-300');
       if (firstError) firstError.focus();
       return;
     }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Šaljemo...';
 
     try {
       const response = await fetch('https://formspree.io/f/xqejgvvn', {
@@ -359,51 +296,31 @@
         body: new FormData(form),
         headers: { 'Accept': 'application/json' }
       });
-      // [EDITABLE: CONTACT_FORM]
       if (response.ok) {
         showMessage('✓ Poruka je uspešno poslata! Javićemo vam se u roku od 24 sata.', 'success');
         form.reset();
+        fields.forEach(f => f.classList.remove('border-green-300', 'border-red-300'));
       } else {
-        // Ako server vrati grešku
-        showMessage('Došlo je do greške. Pokušajte ponovo kasnije.', 'error');
+        showMessage('Došlo je do greške. Pokušajte ponovo.', 'error');
       }
-    } catch (error) {
-      // Ako pukne mreža ili neka druga greška
+    } catch {
       showMessage('Greška u komunikaciji sa serverom.', 'error');
     } finally {
-      // Vraćamo dugme u prvobitno stanje
       submitBtn.disabled = false;
       submitBtn.innerHTML = 'Pošaljite poruku <svg class="inline-block w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>';
     }
-
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Šaljemo...';
-
-    // Simulacija mrežnog zahteva (2 sekunde)
-    await new Promise(resolve => setTimeout(resolve, 2000));
-
-    showMessage('✓ Poruka je uspešno poslata! Javićemo vam se u roku od 24 sata.', 'success');
-    form.reset();
-    fields.forEach(f => f.classList.remove('border-green-300', 'border-red-300'));
-
-    submitBtn.disabled = false;
-    submitBtn.innerHTML = 'Pošaljite poruku <svg class="inline-block w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>';
   });
 
   function showMessage(text, type) {
     msgBox.textContent = text;
-    msgBox.className   = `rounded-2xl px-4 py-3 text-sm font-500 text-center ${type}`;
+    msgBox.className = `rounded-2xl px-4 py-3 text-sm font-500 text-center ${type}`;
     msgBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-    // Automatski sakrij posle 6 sekundi (samo success)
-    if (type === 'success') {
-      setTimeout(() => { msgBox.className = 'hidden'; }, 6000);
-    }
+    if (type === 'success') setTimeout(() => { msgBox.className = 'hidden'; }, 6000);
   }
 })();
 
 // ================================================================
-// 7. SCROLL-TO-TOP DUGME
+// 7. SCROLL-TO-TOP
 // ================================================================
 (function initScrollTop() {
   const btn = document.getElementById('scroll-top');
@@ -424,7 +341,6 @@
 
 // ================================================================
 // 8. SMOOTH ANCHOR NAVIGACIJA
-//    Osigurava pravilno zatvaranje mobile menija i smooth scroll
 // ================================================================
 (function initSmoothAnchors() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -438,7 +354,6 @@
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-      // Postavi fokus na sekciju za screen readere
       target.setAttribute('tabindex', '-1');
       target.focus({ preventScroll: true });
       target.addEventListener('blur', () => target.removeAttribute('tabindex'), { once: true });
