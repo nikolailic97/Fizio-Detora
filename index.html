@@ -1,972 +1,2329 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fizio Detora – Ambulanta za rehabilitaciju</title>
+    <meta
+      name="description"
+      content="Specijalizovana klinika za fizioterapiju i rad sa decom sa posebnim potrebama. Bobath, Vojta, senzorna integracija. Zakažite termin danas."
+    />
+    <meta
+      name="keywords"
+      content="fizioterapija, pedijatrijska rehabilitacija, Bobath, Vojta, senzorna integracija, deca sa posebnim potrebama"
+    />
+    <meta
+      property="og:title"
+      content="Fizio Detora – Ambulanta za rehabilitaciju"
+    />
+    <meta
+      property="og:description"
+      content="Specijalizovana klinika za fizioterapiju i rad sa decom sa posebnim potrebama."
+    />
+    <meta property="og:image" content="assets/images/logo.webp" />
+    <meta
+      property="og:url"
+      content="https://nikolailic97.github.io/Fizio-Detora/"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo.webp" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Fizio Detora – Ambulanta za rehabilitaciju",
+        "url": "https://nikolailic97.github.io/Fizio-Detora/",
+        "logo": "https://nikolailic97.github.io/Fizio-Detora/assets/images/logo.webp",
+        "image": "https://nikolailic97.github.io/Fizio-Detora/assets/images/logo.webp",
+        "description": "Specijalizovana ambulanta za fizioterapiju i rehabilitaciju u Smederevskoj Palanci. Bobath, Vojta, senzorna integracija i rad sa decom sa posebnim potrebama.",
+        "telephone": "+381600149992",
+        "email": "fiziodetora@yahoo.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bulevar Kralja Petra I 6",
+          "addressLocality": "Smederevska Palanka",
+          "addressRegion": "Podunavski okrug",
+          "postalCode": "11420",
+          "addressCountry": "RS"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "44.36913569090968",
+          "longitude": "20.957242853239585"
+        },
+        "hasMap": "https://maps.google.com/?q=44.36913569090968,20.957242853239585",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "16:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "13:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/fizio.detora/",
+          "https://www.instagram.com/fiziodetora/",
+          "https://www.tiktok.com/@fizio.detora"
+        ],
+        "areaServed": {
+          "@type": "City",
+          "name": "Smederevska Palanka"
+        },
+        "priceRange": "$$",
+        "currenciesAccepted": "RSD",
+        "paymentAccepted": "Cash, Card",
+        "medicalSpecialty": ["PhysicalTherapy", "Pediatrics"]
+      }
+    </script>
+  </head>
 
-  <!-- ============================================================
-       [EDITABLE: META_TITLE] - Naziv klinike i kratki opis za Google
-       ============================================================ -->
-  <title>Fizio Detora – Ambulanta za rehabilitaciju</title>
-  <meta name="description" content="Specijalizovana klinika za fizioterapiju i rad sa decom sa posebnim potrebama. Bobath, Vojta, senzorna integracija. Zakažite termin danas." />
-  <meta name="keywords" content="fizioterapija, pedijatrijska rehabilitacija, Bobath, Vojta, senzorna integracija, deca sa posebnim potrebama" />
-
-  <!-- ============================================================
-       [EDITABLE: META_OG] - Slika, naziv i URL za deljenje na mrežama
-       ============================================================ -->
-  <meta property="og:title" content="Fizio Detora – Ambulanta za rehabilitaciju" />
-  <meta property="og:description" content="Specijalizovana klinika za fizioterapiju i rad sa decom sa posebnim potrebama." />
-  <meta property="og:image" content="assets/images/logo.webp" />
-  <meta property="og:url" content="https://www.vasaklinika.rs" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Preconnect za Google Fonts performanse -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <!-- ============================================================
-       [EDITABLE: FONT] - Zamenite Quicksand drugim Google fontom po želji
-       ============================================================ -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/output.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" type="image/png" href="assets/images/logo.webp" />
-
-  <!-- ============================================================
-       [EDITABLE: JSON-LD] - LocalBusiness Schema — popunite sve podatke
-       Ovo je kritično za lokalni SEO na Google-u!
-       ============================================================ -->
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Fizio Detora – Ambulanta za rehabilitaciju",
-  "url": "https://nikolailic97.github.io/Fizio-Detora/",
-  "logo": "https://nikolailic97.github.io/Fizio-Detora/assets/images/logo.webp",
-  "image": "https://nikolailic97.github.io/Fizio-Detora/assets/images/logo.webp",
-  "description": "Specijalizovana ambulanta za fizioterapiju i rehabilitaciju u Smederevskoj Palanci. Bobath, Vojta, senzorna integracija i rad sa decom sa posebnim potrebama.",
-  "telephone": "+381600149992",
-  "email": "fiziodetora@yahoo.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Bulevar Kralja Petra I 6",
-    "addressLocality": "Smederevska Palanka",
-    "addressRegion": "Podunavski okrug",
-    "postalCode": "11420",
-    "addressCountry": "RS"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "44.36913569090968",
-    "longitude": "20.957242853239585"
-  },
-  "hasMap": "https://maps.google.com/?q=44.36913569090968,20.957242853239585",
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "08:00",
-      "closes": "16:30"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "08:00",
-      "closes": "13:00"
-    }
-  ],
-  "sameAs": [
-    "https://www.facebook.com/fizio.detora/",
-    "https://www.instagram.com/fiziodetora/",
-    "https://www.tiktok.com/@fizio.detora"
-  ],
-  "areaServed": {
-    "@type": "City",
-    "name": "Smederevska Palanka"
-  },
-  "priceRange": "$$",
-  "currenciesAccepted": "RSD",
-  "paymentAccepted": "Cash, Card",
-  "medicalSpecialty": ["PhysicalTherapy", "Pediatrics"]
-}
-  </script>
-</head>
-
-<body class="font-sans bg-cream text-gray-700 antialiased overflow-x-hidden">
-
-  <!-- ============================================================
+  <body class="font-sans bg-cream text-gray-700 antialiased overflow-x-hidden">
+    <!-- ============================================================
        NAVIGACIJA
        ============================================================ -->
-  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-
-        <!-- [EDITABLE: LOGO] - Zamenite tekst ili dodajte <img> tag sa vašim logom -->
-        <a href="#" class="flex items-center gap-2 group" aria-label="FizioDetora početna">
-          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-soft transition-transform group-hover:scale-105">
-              <img src="assets/images/logo.webp" alt="FizioDetora logo" class="w-full h-full rounded-full object-contain" />
-          </div>
-          <span class="text-xl font-bold text-gray-800">Fizio<span class="text-primary">Detora</span></span>
-        </a>
-
-        <!-- Desktop navigacija -->
-        <!-- [EDITABLE: NAV_LINKS] - Promenite nazive i # linkove sekcija -->
-        <ul class="hidden md:flex items-center gap-8 text-sm font-600 text-slate-soft" role="list">
-          <li><a href="#usluge"      class="nav-link hover:text-primary transition-colors">Usluge</a></li>
-          <li><a href="#o-nama"      class="nav-link hover:text-primary transition-colors">O nama</a></li>
-          <li><a href="#iskustva"    class="nav-link hover:text-primary transition-colors">Iskustva</a></li>
-          <li><a href="#faq"         class="nav-link hover:text-primary transition-colors">Pitanja</a></li>
-          <li><a href="#kontakt"     class="nav-link hover:text-primary transition-colors">Kontakt</a></li>
-        </ul>
-
-        <!-- CTA dugme -->
-        <a href="#kontakt" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-white text-sm font-700 rounded-2xl shadow-soft hover:bg-primary-dark hover:shadow-soft-lg transition-all duration-200 hover:-translate-y-0.5">
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-          </svg>
-          Zakažite termin
-        </a>
-
-        <!-- Hamburger meni (mobile) -->
-        <button id="menu-btn" class="md:hidden w-10 h-10 flex flex-col justify-center items-center gap-1.5 rounded-2xl bg-cream-soft hover:bg-primary-light transition-colors" aria-label="Otvori meni" aria-expanded="false" aria-controls="mobile-menu">
-          <span class="hamburger-line w-5 h-0.5 bg-gray-700 rounded-full transition-all duration-300"></span>
-          <span class="hamburger-line w-5 h-0.5 bg-gray-700 rounded-full transition-all duration-300"></span>
-          <span class="hamburger-line w-5 h-0.5 bg-gray-700 rounded-full transition-all duration-300"></span>
-        </button>
-      </div>
-
-      <!-- Mobile meni -->
-      <div id="mobile-menu" class="md:hidden hidden pb-4" role="dialog" aria-label="Navigacioni meni">
-        <div class="bg-white rounded-3xl shadow-soft-lg p-4 space-y-1">
-          <!-- [EDITABLE: NAV_LINKS_MOBILE] - Isti linkovi kao desktop -->
-          <a href="#usluge"   class="block px-4 py-3 rounded-2xl text-sm font-600 text-slate-soft hover:bg-cream-soft hover:text-primary transition-all">Usluge</a>
-          <a href="#o-nama"   class="block px-4 py-3 rounded-2xl text-sm font-600 text-slate-soft hover:bg-cream-soft hover:text-primary transition-all">O nama</a>
-          <a href="#iskustva" class="block px-4 py-3 rounded-2xl text-sm font-600 text-slate-soft hover:bg-cream-soft hover:text-primary transition-all">Iskustva</a>
-          <a href="#faq"      class="block px-4 py-3 rounded-2xl text-sm font-600 text-slate-soft hover:bg-cream-soft hover:text-primary transition-all">Pitanja</a>
-          <a href="#kontakt"  class="block px-4 py-3 rounded-2xl text-sm font-600 text-slate-soft hover:bg-cream-soft hover:text-primary transition-all">Kontakt</a>
-          <div class="pt-2">
-            <a href="#kontakt" class="flex items-center justify-center gap-2 w-full px-4 py-3 bg-primary text-white text-sm font-700 rounded-2xl shadow-soft hover:bg-primary-dark transition-all">
-              Zakažite termin
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- ============================================================
-         1. HERO SEKCIJA
-         ============================================================ -->
-    <section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-br from-cream via-cream-warm to-cream-soft">
-
-      <!-- Dekorativni krug u pozadini -->
-      <div class="absolute top-20 right-0 w-96 h-96 bg-primary-light/30 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
-      <div class="absolute bottom-10 left-10 w-64 h-64 bg-mint-light/40 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 lg:py-24">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-          <!-- Leva strana — tekst -->
-          <div class="reveal space-y-6" style="--delay:0ms">
-
-            <!-- [EDITABLE: HERO_BADGE] - Mali badge tekst iznad naslova -->
-            <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-light/50 rounded-full text-primary-dark text-sm font-600 border border-primary-light">
-              <span class="w-2 h-2 rounded-full bg-primary animate-pulse-soft" aria-hidden="true"></span>
-              Specijalizovana pedijatrijska rehabilitacija
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+    >
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- [EDITABLE: LOGO] -->
+          <a
+            href="#"
+            class="flex items-center gap-2 group"
+            aria-label="FizioDetora početna"
+          >
+            <div
+              class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-soft transition-transform group-hover:scale-105"
+            >
+              <img
+                src="assets/images/logo.webp"
+                alt="FizioDetora logo"
+                class="w-full h-full rounded-full object-contain"
+              />
             </div>
+            <span class="text-xl font-bold text-gray-800"
+              >Fizio<span class="text-primary">Detora</span></span
+            >
+          </a>
 
-            <!-- [EDITABLE: HERO_TITLE] - Glavni naslov stranice (jedini H1!) -->
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-700 leading-tight text-gray-800">
-              Svaki korak<br />
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">vašeg deteta</span><br />
-              je naš uspeh
-            </h1>
+          <!-- [EDITABLE: NAV_LINKS] -->
+          <ul
+            class="hidden md:flex items-center gap-8 text-sm font-600 text-slate-soft"
+            role="list"
+          >
+            <li>
+              <a
+                href="#usluge"
+                class="nav-link hover:text-primary transition-colors"
+                >Usluge</a
+              >
+            </li>
+            <li>
+              <a
+                href="#o-nama"
+                class="nav-link hover:text-primary transition-colors"
+                >O nama</a
+              >
+            </li>
+            <li>
+              <a
+                href="#iskustva"
+                class="nav-link hover:text-primary transition-colors"
+                >Iskustva</a
+              >
+            </li>
+            <li>
+              <a
+                href="#faq"
+                class="nav-link hover:text-primary transition-colors"
+                >Pitanja</a
+              >
+            </li>
+            <li>
+              <a
+                href="#kontakt"
+                class="nav-link hover:text-primary transition-colors"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
 
-            <!-- [EDITABLE: HERO_SUBTITLE] - Podnaslov ispod naslova -->
-            <p class="text-lg text-slate-soft leading-relaxed max-w-lg">
-              Pružamo stručnu fizioterapijsku i neurorizvojnu podršku deci od prvih dana života. Uz ljubav, znanje i najsavremenije metode — zajedno gradimo bolju budućnost.
-            </p>
+          <a
+            href="#kontakt"
+            class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-white text-sm font-700 rounded-2xl shadow-soft hover:bg-primary-dark hover:shadow-soft-lg transition-all duration-200 hover:-translate-y-0.5"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2.5"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+            Zakažite termin
+          </a>
 
-            <!-- Akcioni buttons -->
-            <div class="flex flex-col sm:flex-row gap-3">
-              <!-- [EDITABLE: CTA_PRIMARY] - Tekst i link primarnog dugmeta -->
-              <a href="#kontakt" class="inline-flex items-center justify-center gap-2 px-7 py-4 bg-primary text-white font-700 rounded-3xl shadow-soft-lg hover:bg-primary-dark hover:shadow-lg hover:-translate-y-1 transition-all duration-200 text-base">
-                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                </svg>
+          <button
+            id="menu-btn"
+            class="md:hidden w-10 h-10 flex flex-col justify-center items-center gap-1.5 rounded-2xl bg-cream-soft hover:bg-primary-light transition-colors"
+            aria-label="Otvori meni"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span
+              class="hamburger-line w-5 h-0.5 bg-gray-700 rounded-full transition-all duration-300"
+            ></span>
+            <span
+              class="hamburger-line w-5 h-0.5 bg-gray-700 rounded-full transition-all duration-300"
+            ></span>
+            <span
+              class="hamburger-line w-5 h-0.5 bg-gray-700 rounded-full transition-all duration-300"
+            ></span>
+          </button>
+        </div>
+
+        <!-- [EDITABLE: NAV_LINKS_MOBILE] -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden pb-4"
+          role="dialog"
+          aria-label="Navigacioni meni"
+        >
+          <div class="bg-white rounded-3xl shadow-soft-lg p-4 space-y-1">
+            <a
+              href="#usluge"
+              class="block px-4 py-3 rounded-2xl text-sm font-600 text-slate-soft hover:bg-cream-soft hover:text-primary transition-all"
+              >Usluge</a
+            >
+            <a
+              href="#o-nama"
+              class="block px-4 py-3 rounded-2xl text-sm font-600 text-slate-soft hover:bg-cream-soft hover:text-primary transition-all"
+              >O nama</a
+            >
+            <a
+              href="#iskustva"
+              class="block px-4 py-3 rounded-2xl text-sm font-600 text-slate-soft hover:bg-cream-soft hover:text-primary transition-all"
+              >Iskustva</a
+            >
+            <a
+              href="#faq"
+              class="block px-4 py-3 rounded-2xl text-sm font-600 text-slate-soft hover:bg-cream-soft hover:text-primary transition-all"
+              >Pitanja</a
+            >
+            <a
+              href="#kontakt"
+              class="block px-4 py-3 rounded-2xl text-sm font-600 text-slate-soft hover:bg-cream-soft hover:text-primary transition-all"
+              >Kontakt</a
+            >
+            <div class="pt-2">
+              <a
+                href="#kontakt"
+                class="flex items-center justify-center gap-2 w-full px-4 py-3 bg-primary text-white text-sm font-700 rounded-2xl shadow-soft hover:bg-primary-dark transition-all"
+              >
                 Zakažite termin
               </a>
-              <!-- [EDITABLE: CTA_SECONDARY] - Tekst i link sekundarnog dugmeta -->
-              <a href="#usluge" class="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white text-primary font-700 rounded-3xl border-2 border-primary-light hover:border-primary hover:bg-primary-light/20 transition-all duration-200 text-base">
-                Naše usluge
-                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-                </svg>
-              </a>
-            </div>
-
-            <!-- Statistike / Trust signali -->
-            <!-- [EDITABLE: HERO_STATS] - Zamenite brojeve vašim stvarnim podacima -->
-            <div class="flex gap-8 pt-4">
-              <div>
-                <p class="text-3xl font-700 text-gray-800">500<span class="text-primary">+</span></p>
-                <p class="text-sm text-slate-soft font-500">Zadovoljnih porodica</p>
-              </div>
-              <div class="w-px bg-gray-200"></div>
-              <div>
-                <p class="text-3xl font-700 text-gray-800">10<span class="text-primary">+</span></p>
-                <p class="text-sm text-slate-soft font-500">Godina iskustva</p>
-              </div>
             </div>
           </div>
-
-          <!-- Desna strana — ilustracija / slika -->
-          <div class="reveal relative flex items-center justify-center" style="--delay:150ms">
-
-            <!-- Glavni okvir slike -->
-            <!-- [EDITABLE: HERO_IMAGE] - Zamenite src sa putanjom vaše slike. Preporučena veličina: 600x600px -->
-            <div class="relative w-full max-w-sm lg:max-w-none animate-float">
-              <div class="relative bg-gradient-to-br from-primary-light/60 to-mint-light/60 rounded-4xl p-3 shadow-soft-lg">
-                <img
-                  src="assets/images/hero-main.webp"
-                  alt="Fizioterapeut radi sa detetom u modernoj klinici"
-                  class="w-full h-80 lg:h-96 object-cover rounded-3xl"
-                  loading="eager"
-                  width="520"
-                  height="420"
-                />
-                <!-- Floating kartica 1 -->
-                <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-soft p-3 flex items-center gap-3">
-                  <div class="w-10 h-10 bg-mint-light rounded-xl flex items-center justify-center" aria-hidden="true">
-                    <svg class="w-5 h-5 text-mint-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                  </div>
-                  <div>
-                    <!-- [EDITABLE: HERO_FLOAT_CARD_1] -->
-                    <p class="text-xs font-600 text-gray-800">Sertifikovani</p>
-                    <p class="text-xs text-slate-soft">Bobath & Vojta</p>
-                  </div>
-                </div>
-                <!-- Floating kartica 2 -->
-                <div class="absolute -top-5 -right-5 bg-white rounded-2xl shadow-soft p-3 flex items-center gap-3">
-                  <div class="w-10 h-10 bg-secondary-light rounded-xl flex items-center justify-center" aria-hidden="true">
-                    <svg class="w-5 h-5 text-secondary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-                  </div>
-                  <div>
-                    <!-- [EDITABLE: HERO_FLOAT_CARD_2] -->
-                    <p class="text-xs font-600 text-gray-800">Holistički pristup</p>
-                    <p class="text-xs text-slate-soft">Dete & porodica</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
+      </nav>
+    </header>
 
-      <!-- Scroll indicator -->
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce" aria-hidden="true">
-        <div class="w-px h-8 bg-gradient-to-b from-transparent to-primary-light"></div>
-        <svg class="w-4 h-4 text-primary-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-        </svg>
-      </div>
-    </section>
+    <main>
+      <!-- ============================================================
+         1. HERO SEKCIJA
+         ============================================================ -->
+      <section
+        id="hero"
+        class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-br from-cream via-cream-warm to-cream-soft"
+      >
+        <div
+          class="absolute top-20 right-0 w-96 h-96 bg-primary-light/30 rounded-full blur-3xl pointer-events-none"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="absolute bottom-10 left-10 w-64 h-64 bg-secondary-light/30 rounded-full blur-3xl pointer-events-none"
+          aria-hidden="true"
+        ></div>
 
-    <!-- ============================================================
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 lg:py-24"
+        >
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+          >
+            <!-- Leva strana — tekst -->
+            <div class="reveal space-y-6" style="--delay: 0ms">
+              <!-- [EDITABLE: HERO_BADGE] -->
+              <div
+                class="inline-flex items-center gap-2 px-4 py-2 bg-primary-light/50 rounded-full text-primary-dark text-sm font-600 border border-primary-light"
+              >
+                <span
+                  class="w-2 h-2 rounded-full bg-primary animate-pulse-soft"
+                  aria-hidden="true"
+                ></span>
+                Specijalizovana pedijatrijska rehabilitacija
+              </div>
+
+              <!-- [EDITABLE: HERO_TITLE] -->
+              <h1
+                class="text-4xl sm:text-5xl lg:text-6xl font-700 leading-tight text-gray-800"
+              >
+                Svaki korak<br />
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+                  >vašeg deteta</span
+                ><br />
+                je naš uspeh
+              </h1>
+
+              <!-- [EDITABLE: HERO_SUBTITLE] -->
+              <p class="text-lg text-slate-soft leading-relaxed max-w-lg">
+                Pružamo stručnu fizioterapijsku i neurorizvojnu podršku deci od
+                prvih dana života. Uz ljubav, znanje i najsavremenije metode —
+                zajedno gradimo bolju budućnost.
+              </p>
+
+              <div class="flex flex-col sm:flex-row gap-3">
+                <!-- [EDITABLE: CTA_PRIMARY] -->
+                <a
+                  href="#kontakt"
+                  class="inline-flex items-center justify-center gap-2 px-7 py-4 bg-primary text-white font-700 rounded-3xl shadow-soft-lg hover:bg-primary-dark hover:shadow-lg hover:-translate-y-1 transition-all duration-200 text-base"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  Zakažite termin
+                </a>
+                <!-- [EDITABLE: CTA_SECONDARY] -->
+                <a
+                  href="#usluge"
+                  class="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white text-primary font-700 rounded-3xl border-2 border-primary-light hover:border-primary hover:bg-primary-light/20 transition-all duration-200 text-base"
+                >
+                  Naše usluge
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <!-- [EDITABLE: HERO_STATS] -->
+              <div class="flex gap-8 pt-4">
+                <div>
+                  <p class="text-3xl font-700 text-gray-800">
+                    500<span class="text-accent-dark">+</span>
+                  </p>
+                  <p class="text-sm text-slate-soft font-500">
+                    Zadovoljnih porodica
+                  </p>
+                </div>
+                <div class="w-px bg-gray-200"></div>
+                <div>
+                  <p class="text-3xl font-700 text-gray-800">
+                    10<span class="text-accent-dark">+</span>
+                  </p>
+                  <p class="text-sm text-slate-soft font-500">
+                    Godina iskustva
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desna strana — slika -->
+            <div
+              class="reveal relative flex items-center justify-center"
+              style="--delay: 150ms"
+            >
+              <!-- [EDITABLE: HERO_IMAGE] - Preporučena veličina: 600x600px -->
+              <div class="relative w-full max-w-sm lg:max-w-none animate-float">
+                <div
+                  class="relative bg-gradient-to-br from-primary-light/60 to-secondary-light/40 rounded-4xl p-3 shadow-soft-lg"
+                >
+                  <img
+                    src="assets/images/hero-main.webp"
+                    alt="Fizioterapeut radi sa detetom u modernoj klinici"
+                    class="w-full h-80 lg:h-96 object-cover rounded-3xl"
+                    loading="eager"
+                    width="520"
+                    height="420"
+                  />
+                  <!-- [EDITABLE: HERO_FLOAT_CARD_1] -->
+                  <div
+                    class="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-soft p-3 flex items-center gap-3"
+                  >
+                    <div
+                      class="w-10 h-10 bg-accent-light rounded-xl flex items-center justify-center"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        class="w-5 h-5 text-accent-dark"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-xs font-600 text-gray-800">
+                        Sertifikovani
+                      </p>
+                      <p class="text-xs text-slate-soft">Bobath & Vojta</p>
+                    </div>
+                  </div>
+                  <!-- [EDITABLE: HERO_FLOAT_CARD_2] -->
+                  <div
+                    class="absolute -top-5 -right-5 bg-white rounded-2xl shadow-soft p-3 flex items-center gap-3"
+                  >
+                    <div
+                      class="w-10 h-10 bg-secondary-light rounded-xl flex items-center justify-center"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        class="w-5 h-5 text-secondary-dark"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-xs font-600 text-gray-800">
+                        Holistički pristup
+                      </p>
+                      <p class="text-xs text-slate-soft">Dete & porodica</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce"
+          aria-hidden="true"
+        >
+          <div
+            class="w-px h-8 bg-gradient-to-b from-transparent to-primary-light"
+          ></div>
+          <svg
+            class="w-4 h-4 text-primary-light"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <!-- ============================================================
          2. BENTO GRID USLUGE
          ============================================================ -->
-    <section id="usluge" class="py-20 lg:py-28 bg-cream-soft">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="usluge" class="py-20 lg:py-28 bg-cream-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+            <!-- [EDITABLE: SERVICES_BADGE] -->
+            <span
+              class="inline-block px-4 py-1.5 bg-secondary-light text-secondary-dark text-sm font-600 rounded-full mb-4"
+              >Naše usluge</span
+            >
+            <!-- [EDITABLE: SERVICES_TITLE] -->
+            <h2 class="text-3xl sm:text-4xl font-700 text-gray-800 mb-4">
+              Specijalizovane terapeutske metode
+            </h2>
+            <!-- [EDITABLE: SERVICES_SUBTITLE] -->
+            <p class="text-slate-soft leading-relaxed">
+              Svaka metoda je pažljivo odabrana da podrži razvoj vašeg deteta na
+              holistički i naučno zasnovan način.
+            </p>
+          </div>
 
-        <!-- Zaglavlje sekcije -->
-        <div class="text-center max-w-2xl mx-auto mb-14 reveal">
-          <!-- [EDITABLE: SERVICES_BADGE] -->
-          <span class="inline-block px-4 py-1.5 bg-secondary-light text-sm font-600 rounded-full mb-4">Naše usluge</span>
-          <!-- [EDITABLE: SERVICES_TITLE] -->
-          <h2 class="text-3xl sm:text-4xl font-700 text-gray-800 mb-4">Specijalizovane terapeutske metode</h2>
-          <!-- [EDITABLE: SERVICES_SUBTITLE] -->
-          <p class="text-slate-soft leading-relaxed">Svaka metoda je pažljivo odabrana da podrži razvoj vašeg deteta na holistički i naučno zasnovan način.</p>
-        </div>
-
-        <!-- Bento Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-auto">
-
-          <!-- [EDITABLE: SERVICE_CARD_1] - Prva i najveća kartica (span 2 kolone na lg) -->
-          <article class="reveal lg:col-span-2 bg-gradient-to-br from-primary-light/50 to-primary-light/20 rounded-4xl p-7 shadow-card hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300 flex flex-col sm:flex-row gap-6 items-start" style="--delay:0ms">
-            <div class="flex-shrink-0 w-14 h-14 bg-primary/20 rounded-3xl flex items-center justify-center" aria-hidden="true">
-              <!-- [EDITABLE: SERVICE_ICON_1] - SVG ikonica -->
-              <svg class="w-7 h-7 text-primary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-              </svg>
-            </div>
-            <div class="flex-1">
-              <!-- [EDITABLE: SERVICE_NAME_1] -->
-              <h3 class="text-xl font-700 text-gray-800 mb-2">Bobath terapija</h3>
-              <!-- [EDITABLE: SERVICE_DESC_1] -->
-              <p class="text-slate-soft leading-relaxed text-sm">Neurorizvojna terapija koja poboljšava motoričke funkcije kod dece sa cerebralnom paralizom i neurološkim poremećajima. Fokus je na kvalitetu pokreta i funkcionalnoj nezavisnosti.</p>
-              <a href="#kontakt" class="inline-flex items-center gap-1 mt-4 text-primary-dark text-sm font-600 hover:gap-2 transition-all">
-                Saznajte više <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- [EDITABLE: SERVICE_CARD_2] -->
-          <article class="reveal bg-gradient-to-br from-mint-light/60 to-mint-light/20 rounded-4xl p-7 shadow-card hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300" style="--delay:100ms">
-            <div class="w-14 h-14 bg-mint/30 rounded-3xl flex items-center justify-center mb-5" aria-hidden="true">
-              <!-- [EDITABLE: SERVICE_ICON_2] -->
-              <svg class="w-7 h-7 text-mint-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
-              </svg>
-            </div>
-            <!-- [EDITABLE: SERVICE_NAME_2] -->
-            <h3 class="text-lg font-700 text-gray-800 mb-2">Vojta terapija</h3>
-            <!-- [EDITABLE: SERVICE_DESC_2] -->
-            <p class="text-slate-soft text-sm leading-relaxed">Refleksna lokomotorna terapija za aktivaciju urođenih motoričkih obrazaca i neurološku reorganizaciju kod odojčadi i male dece.</p>
-          </article>
-
-          <!-- [EDITABLE: SERVICE_CARD_3] -->
-          <article class="reveal bg-gradient-to-br from-secondary-light/50 to-secondary-light/20 rounded-4xl p-7 shadow-card hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300" style="--delay:150ms">
-            <div class="w-14 h-14 bg-secondary/30 rounded-3xl flex items-center justify-center mb-5" aria-hidden="true">
-              <!-- [EDITABLE: SERVICE_ICON_3] -->
-              <svg class="w-7 h-7 text-secondary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m1.636-6.364l.707.707M12 21v-1m-6.364-1.636l.707-.707"/>
-              </svg>
-            </div>
-            <!-- [EDITABLE: SERVICE_NAME_3] -->
-            <h3 class="text-lg font-700 text-gray-800 mb-2">Senzorna integracija</h3>
-            <!-- [EDITABLE: SERVICE_DESC_3] -->
-            <p class="text-slate-soft text-sm leading-relaxed">Terapija za decu koja imaju teškoće u obradi čulnih informacija. Poboljšava pažnju, koordinaciju i socijalne veštine.</p>
-          </article>
-
-          <!-- [EDITABLE: SERVICE_CARD_4] -->
-          <article class="reveal bg-white rounded-4xl p-7 shadow-card hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300" style="--delay:200ms">
-            <div class="w-14 h-14 bg-cream-soft rounded-3xl flex items-center justify-center mb-5 border border-gray-100" aria-hidden="true">
-              <!-- [EDITABLE: SERVICE_ICON_4] -->
-              <svg class="w-7 h-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-            </div>
-            <!-- [EDITABLE: SERVICE_NAME_4] -->
-            <h3 class="text-lg font-700 text-gray-800 mb-2">Govorno-jezička terapija</h3>
-            <!-- [EDITABLE: SERVICE_DESC_4] -->
-            <p class="text-slate-soft text-sm leading-relaxed">Stručna podrška za razvoj govora, komunikacije i alimentarnih funkcija kod dece svih uzrasta.</p>
-          </article>
-
-          <!-- [EDITABLE: SERVICE_CARD_5] -->
-          <article class="reveal bg-gradient-to-br from-cream-warm to-white rounded-4xl p-7 shadow-card hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300" style="--delay:250ms">
-            <div class="w-14 h-14 bg-primary-light/40 rounded-3xl flex items-center justify-center mb-5" aria-hidden="true">
-              <!-- [EDITABLE: SERVICE_ICON_5] -->
-              <svg class="w-7 h-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-              </svg>
-            </div>
-            <!-- [EDITABLE: SERVICE_NAME_5] -->
-            <h3 class="text-lg font-700 text-gray-800 mb-2">ABA terapija</h3>
-            <!-- [EDITABLE: SERVICE_DESC_5] -->
-            <p class="text-slate-soft text-sm leading-relaxed">Primenjena analiza ponašanja za decu sa poremećajima autističnog spektra. Strukturirani pristup razvoju veština i smanjenju izazovnog ponašanja.</p>
-          </article>
-
-          <!-- [EDITABLE: SERVICE_CARD_6] - CTA kartica -->
-          <article class="reveal bg-gradient-to-br from-primary to-secondary rounded-4xl p-7 shadow-soft-lg text-white flex flex-col justify-between" style="--delay:300ms">
-            <div>
-              <div class="w-14 h-14 bg-white/20 rounded-3xl flex items-center justify-center mb-5" aria-hidden="true">
-                <svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-auto"
+          >
+            <!-- [EDITABLE: SERVICE_CARD_1] -->
+            <article
+              class="reveal lg:col-span-2 bg-gradient-to-br from-primary-light/50 to-primary-light/20 rounded-4xl p-7 shadow-card hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300 flex flex-col sm:flex-row gap-6 items-start"
+              style="--delay: 0ms"
+            >
+              <div
+                class="flex-shrink-0 w-14 h-14 bg-primary/20 rounded-3xl flex items-center justify-center"
+                aria-hidden="true"
+              >
+                <svg
+                  class="w-7 h-7 text-primary-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
                 </svg>
               </div>
-              <!-- [EDITABLE: SERVICE_CTA_TITLE] -->
-              <h3 class="text-lg font-700 mb-2">Niste sigurni koja terapija odgovara?</h3>
-              <!-- [EDITABLE: SERVICE_CTA_DESC] -->
-              <p class="text-white/80 text-sm leading-relaxed">Zakažite besplatne konsultacije — naš tim će preporučiti optimalan plan terapije za vaše dete.</p>
-            </div>
-            <a href="#kontakt" class="mt-6 inline-flex items-center justify-center gap-2 w-full py-3 bg-white text-primary font-700 rounded-2xl text-sm hover:bg-primary-light transition-colors">
-              Besplatne konsultacije
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-            </a>
-          </article>
+              <div class="flex-1">
+                <h3 class="text-xl font-700 text-gray-800 mb-2">
+                  Bobath terapija
+                </h3>
+                <p class="text-slate-soft leading-relaxed text-sm">
+                  Neurorizvojna terapija koja poboljšava motoričke funkcije kod
+                  dece sa cerebralnom paralizom i neurološkim poremećajima.
+                  Fokus je na kvalitetu pokreta i funkcionalnoj nezavisnosti.
+                </p>
+                <a
+                  href="#kontakt"
+                  class="inline-flex items-center gap-1 mt-4 text-primary-dark text-sm font-600 hover:gap-2 transition-all"
+                >
+                  Saznajte više
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
 
+            <!-- [EDITABLE: SERVICE_CARD_2] -->
+            <article
+              class="reveal bg-gradient-to-br from-accent-light/60 to-accent-light/20 rounded-4xl p-7 shadow-card hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300"
+              style="--delay: 100ms"
+            >
+              <div
+                class="w-14 h-14 bg-accent/30 rounded-3xl flex items-center justify-center mb-5"
+                aria-hidden="true"
+              >
+                <svg
+                  class="w-7 h-7 text-accent-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-700 text-gray-800 mb-2">
+                Vojta terapija
+              </h3>
+              <p class="text-slate-soft text-sm leading-relaxed">
+                Refleksna lokomotorna terapija za aktivaciju urođenih motoričkih
+                obrazaca i neurološku reorganizaciju kod odojčadi i male dece.
+              </p>
+            </article>
+
+            <!-- [EDITABLE: SERVICE_CARD_3] -->
+            <article
+              class="reveal bg-gradient-to-br from-primary-light/40 to-cream-soft rounded-4xl p-7 shadow-card hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300"
+              style="--delay: 150ms"
+            >
+              <div
+                class="w-14 h-14 bg-primary/20 rounded-3xl flex items-center justify-center mb-5"
+                aria-hidden="true"
+              >
+                <svg
+                  class="w-7 h-7 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m1.636-6.364l.707.707M12 21v-1m-6.364-1.636l.707-.707"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-700 text-gray-800 mb-2">
+                Senzorna integracija
+              </h3>
+              <p class="text-slate-soft text-sm leading-relaxed">
+                Terapija za decu koja imaju teškoće u obradi čulnih informacija.
+                Poboljšava pažnju, koordinaciju i socijalne veštine.
+              </p>
+            </article>
+
+            <!-- [EDITABLE: SERVICE_CARD_4] -->
+            <article
+              class="reveal bg-gradient-to-br from-accent-light/50 to-accent/10 rounded-4xl p-7 shadow-card hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300"
+              style="--delay: 200ms"
+            >
+              <div
+                class="w-14 h-14 bg-accent/20 rounded-3xl flex items-center justify-center mb-5 border border-accent-light"
+                aria-hidden="true"
+              >
+                <svg
+                  class="w-7 h-7 text-accent-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-700 text-gray-800 mb-2">
+                Govorno-jezička terapija
+              </h3>
+              <p class="text-slate-soft text-sm leading-relaxed">
+                Stručna podrška za razvoj govora, komunikacije i alimentarnih
+                funkcija kod dece svih uzrasta.
+              </p>
+            </article>
+
+            <!-- [EDITABLE: SERVICE_CARD_5] -->
+            <article
+              class="reveal bg-gradient-to-br from-cream-warm to-white rounded-4xl p-7 shadow-card hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300"
+              style="--delay: 250ms"
+            >
+              <div
+                class="w-14 h-14 bg-secondary-light/40 rounded-3xl flex items-center justify-center mb-5"
+                aria-hidden="true"
+              >
+                <svg
+                  class="w-7 h-7 text-secondary-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-700 text-gray-800 mb-2">ABA terapija</h3>
+              <p class="text-slate-soft text-sm leading-relaxed">
+                Primenjena analiza ponašanja za decu sa poremećajima autističnog
+                spektra. Strukturirani pristup razvoju veština i smanjenju
+                izazovnog ponašanja.
+              </p>
+            </article>
+
+            <!-- [EDITABLE: SERVICE_CARD_6] - CTA kartica -->
+            <article
+              class="reveal bg-gradient-to-br from-primary to-secondary rounded-4xl p-7 shadow-soft-lg text-white flex flex-col justify-between"
+              style="--delay: 300ms"
+            >
+              <div>
+                <div
+                  class="w-14 h-14 bg-white/20 rounded-3xl flex items-center justify-center mb-5"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-7 h-7 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <!-- [EDITABLE: SERVICE_CTA_TITLE] -->
+                <h3 class="text-lg font-700 mb-2">
+                  Niste sigurni koja terapija odgovara?
+                </h3>
+                <!-- [EDITABLE: SERVICE_CTA_DESC] -->
+                <p class="text-white/80 text-sm leading-relaxed">
+                  Zakažite besplatne konsultacije — naš tim će preporučiti
+                  optimalan plan terapije za vaše dete.
+                </p>
+              </div>
+              <a
+                href="#kontakt"
+                class="mt-6 inline-flex items-center justify-center gap-2 w-full py-3 bg-white text-primary font-700 rounded-2xl text-sm hover:bg-accent-light transition-colors"
+              >
+                Besplatne konsultacije
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ============================================================
+      <!-- ============================================================
          3. O NAMA SEKCIJA
          ============================================================ -->
-    <section id="o-nama" class="py-20 lg:py-28 bg-cream">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
-          <!-- Leva strana — fotografije tima -->
-          <div class="reveal relative" style="--delay:0ms">
-            <div class="grid grid-cols-2 gap-4">
-              <!-- [EDITABLE: ABOUT_IMAGE_1] - Slika tima ili klinike. Preporučena veličina: 400x480px -->
-              <img src="assets/images/about-team-1.webp" alt="Naš stručni tim fizioterapeuta" class="w-full h-64 object-cover rounded-4xl shadow-soft" loading="lazy" width="300" height="370" />
-              <!-- [EDITABLE: ABOUT_IMAGE_2] - Druga slika (pomeri je da bude niže za efekat) -->
-              <img src="assets/images/about-team-2.webp" alt="Fizioterapeut tokom sesije sa detetom" class="w-full h-64 object-cover rounded-4xl shadow-soft mt-8" loading="lazy" width="300" height="370" />
+      <section id="o-nama" class="py-20 lg:py-28 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- DEO 1: O NAMA -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+          >
+            <!-- Leva strana — grupna slika tima -->
+            <div class="reveal relative" style="--delay: 0ms">
+              <!-- [EDITABLE: ABOUT_IMAGE] - Grupna slika celog tima. Preporučena veličina: 600x450px -->
+              <img
+                src="assets/images/full-team.webp"
+                alt="Tim ambulante Fizio Detora"
+                class="w-full h-80 lg:h-96 object-cover rounded-4xl shadow-soft"
+                loading="lazy"
+                width="600"
+                height="450"
+              />
+              <!-- Floating badge -->
+              <div
+                class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white rounded-3xl shadow-soft-lg px-6 py-4 flex items-center gap-4 whitespace-nowrap"
+              >
+                <!-- [EDITABLE: ABOUT_BADGE] -->
+                <div
+                  class="w-12 h-12 bg-accent-light rounded-2xl flex items-center justify-center flex-shrink-0"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-6 h-6 text-accent-dark"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-700 text-gray-800">
+                    Sertifikovana ambulanta
+                  </p>
+                  <p class="text-xs text-slate-soft">
+                    Ministarstvo zdravlja RS
+                  </p>
+                </div>
+              </div>
             </div>
-            <!-- Floating badge -->
-            <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white rounded-3xl shadow-soft-lg px-6 py-4 flex items-center gap-4 whitespace-nowrap">
-              <!-- [EDITABLE: ABOUT_BADGE] - Nagrada ili sertifikat klinike -->
-              <div class="w-12 h-12 bg-primary-light rounded-2xl flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                </svg>
-              </div>
-              <div>
-                <p class="text-sm font-700 text-gray-800">Sertifikovana klinika</p>
-                <p class="text-xs text-slate-soft">Ministarstvo zdravlja RS</p>
-              </div>
+
+            <!-- Desna strana — tekst -->
+            <div class="reveal space-y-6" style="--delay: 150ms">
+              <!-- [EDITABLE: ABOUT_BADGE_TEXT] -->
+              <span
+                class="inline-block px-4 py-1.5 bg-secondary-light text-secondary-dark text-sm font-600 rounded-full"
+                >O nama</span
+              >
+              <!-- [EDITABLE: ABOUT_TITLE] -->
+              <h2 class="text-3xl sm:text-4xl font-700 text-gray-800">
+                Posvećeni svakom koraku vašeg deteta
+              </h2>
+              <!-- [EDITABLE: ABOUT_DESC_1] -->
+              <p class="text-slate-soft leading-relaxed">
+                Fizio Detora je osnovana sa jednom misijom — pružiti svakom
+                detetu šansu da dostigne svoj puni potencijal. Verujemo da svaki
+                napredak, ma kako mali bio, zaslužuje slavlje.
+              </p>
+              <!-- [EDITABLE: ABOUT_DESC_2] -->
+              <p class="text-slate-soft leading-relaxed">
+                Tim čine sertifikovani fizioterapeuti koji kontinuirano
+                usavršavaju znanje kroz domaće i međunarodne edukacije i
+                treninge.
+              </p>
+
+              <!-- [EDITABLE: ABOUT_FEATURES] -->
+              <ul class="space-y-3" role="list">
+                <li
+                  class="flex items-center gap-3 text-sm text-gray-700 font-500"
+                >
+                  <span
+                    class="w-6 h-6 bg-primary-light rounded-full flex items-center justify-center flex-shrink-0"
+                    aria-hidden="true"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5 text-primary-dark"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                  Individualni plan terapije za svako dete
+                </li>
+                <li
+                  class="flex items-center gap-3 text-sm text-gray-700 font-500"
+                >
+                  <span
+                    class="w-6 h-6 bg-secondary-light rounded-full flex items-center justify-center flex-shrink-0"
+                    aria-hidden="true"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5 text-secondary-dark"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                  Roditelji su aktivni učesnici terapijskog procesa
+                </li>
+                <li
+                  class="flex items-center gap-3 text-sm text-gray-700 font-500"
+                >
+                  <span
+                    class="w-6 h-6 bg-primary-light rounded-full flex items-center justify-center flex-shrink-0"
+                    aria-hidden="true"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5 text-primary-dark"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                  Moderna oprema u prijatnom ambijentu
+                </li>
+                <li
+                  class="flex items-center gap-3 text-sm text-gray-700 font-500"
+                >
+                  <span
+                    class="w-6 h-6 bg-secondary-light rounded-full flex items-center justify-center flex-shrink-0"
+                    aria-hidden="true"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5 text-secondary-dark"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                  Kontinuirani monitoring napretka i izveštaji
+                </li>
+              </ul>
             </div>
           </div>
 
-          <!-- Desna strana — tekst -->
-          <div class="reveal space-y-6" style="--delay:150ms">
-            <!-- [EDITABLE: ABOUT_BADGE_TEXT] -->
-            <span class="inline-block px-4 py-1.5 bg-mint-light text-mint-dark text-sm font-600 rounded-full">O nama</span>
-            <!-- [EDITABLE: ABOUT_TITLE] -->
-            <h2 class="text-3xl sm:text-4xl font-700 text-gray-800">Više od 10 godina uz porodice koje nam veruju</h2>
-            <!-- [EDITABLE: ABOUT_DESC_1] -->
-            <p class="text-slate-soft leading-relaxed">Naša klinika je osnovana sa jednom misijom — pružiti svakome detetu šansu da dostigne svoj puni potencijal. Verujemo da svaki napredak, ma kako mali bio, zaslužuje slavlje.</p>
-            <!-- [EDITABLE: ABOUT_DESC_2] -->
-            <p class="text-slate-soft leading-relaxed">Tim čine certifikovani fizioterapeuti, radni terapeuti, logopedi i psiholozi koji kontinuirano usavršavaju znanje kroz međunarodne edukacije i treninge.</p>
+          <!-- --------------------------------------------------------
+               DEO 2: O TIMU
+               -------------------------------------------------------- -->
+          <div class="mt-24">
+            <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+              <span
+                class="inline-block px-4 py-1.5 bg-secondary-light text-secondary-dark text-sm font-600 rounded-full mb-4"
+                >Naš tim</span
+              >
+              <!-- [EDITABLE: TEAM_TITLE] -->
+              <h2 class="text-3xl sm:text-4xl font-700 text-gray-800">
+                Upoznajte ljude koji brinu o vašem detetu
+              </h2>
+            </div>
 
-            <!-- Lista prednosti -->
-            <!-- [EDITABLE: ABOUT_FEATURES] - Lista ključnih vrednosti -->
-            <ul class="space-y-3" role="list">
-              <li class="flex items-center gap-3 text-sm text-gray-700 font-500">
-                <span class="w-6 h-6 bg-primary-light rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                  <svg class="w-3.5 h-3.5 text-primary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                </span>
-                Individualni plan terapije za svako dete
-              </li>
-              <li class="flex items-center gap-3 text-sm text-gray-700 font-500">
-                <span class="w-6 h-6 bg-mint-light rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                  <svg class="w-3.5 h-3.5 text-mint-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                </span>
-                Roditelji su aktivni učesnici terapijskog procesa
-              </li>
-              <li class="flex items-center gap-3 text-sm text-gray-700 font-500">
-                <span class="w-6 h-6 bg-secondary-light rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                  <svg class="w-3.5 h-3.5 text-secondary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                </span>
-                Moderna oprema u prijatnom ambijentu
-              </li>
-              <li class="flex items-center gap-3 text-sm text-gray-700 font-500">
-                <span class="w-6 h-6 bg-primary-light rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                  <svg class="w-3.5 h-3.5 text-primary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                </span>
-                Kontinuirani monitoring napretka i izveštaji
-              </li>
-            </ul>
+            <div class="space-y-6">
+              <!-- RADNIK 1 -->
+              <article
+                class="reveal bg-white rounded-4xl shadow-card hover:shadow-soft-lg transition-all duration-300"
+                style="--delay: 0ms"
+              >
+                <div
+                  class="flex flex-col sm:flex-row gap-6 p-6 lg:p-8 items-center sm:items-start"
+                >
+                  <div class="flex-shrink-0">
+                    <!-- [EDITABLE: TEAM_1_IMAGE] - Preporučena veličina: 300x300px -->
+                    <img
+                      src="assets/images/team-member-1.webp"
+                      alt="Ime Prezime — Fizioterapeut"
+                      class="w-32 h-32 lg:w-40 lg:h-40 object-cover rounded-3xl shadow-soft"
+                      loading="lazy"
+                      width="160"
+                      height="160"
+                    />
+                  </div>
+                  <div class="flex-1 text-center sm:text-left">
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-2 mb-3"
+                    >
+                      <!-- [EDITABLE: TEAM_1_NAME] -->
+                      <h3 class="text-xl font-700 text-gray-800">
+                        Ime Prezime
+                      </h3>
+                      <!-- [EDITABLE: TEAM_1_ROLE] -->
+                      <span
+                        class="inline-block px-3 py-1 bg-primary-light text-primary-dark text-xs font-600 rounded-full"
+                        >Fizioterapeut</span
+                      >
+                    </div>
+                    <!-- [EDITABLE: TEAM_1_BIO] -->
+                    <p class="text-slate-soft text-sm leading-relaxed mb-4">
+                      Sertifikovani Bobath i Vojta terapeut sa 8 godina iskustva
+                      u radu sa decom sa neurorizvojnim poremećajima.
+                      Kontinuirano se usavršava kroz domaće i međunarodne
+                      edukacije.
+                    </p>
+                    <!-- [EDITABLE: TEAM_1_TAGS] -->
+                    <div
+                      class="flex flex-wrap justify-center sm:justify-start gap-2"
+                    >
+                      <span
+                        class="px-3 py-1 bg-cream-soft text-slate-soft text-xs font-500 rounded-full"
+                        >Bobath</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-cream-soft text-slate-soft text-xs font-500 rounded-full"
+                        >Vojta</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-cream-soft text-slate-soft text-xs font-500 rounded-full"
+                        >Neurorazvojne terapije</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </article>
 
-            <a href="#kontakt" class="inline-flex items-center gap-2 px-6 py-3.5 bg-primary text-white font-700 rounded-3xl shadow-soft hover:bg-primary-dark hover:-translate-y-0.5 transition-all text-sm">
-              Upoznajte naš tim
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-            </a>
+              <!-- RADNIK 2 -->
+              <article
+                class="reveal bg-white rounded-4xl shadow-card hover:shadow-soft-lg transition-all duration-300"
+                style="--delay: 100ms"
+              >
+                <div
+                  class="flex flex-col sm:flex-row gap-6 p-6 lg:p-8 items-center sm:items-start"
+                >
+                  <div class="flex-shrink-0">
+                    <!-- [EDITABLE: TEAM_2_IMAGE] -->
+                    <img
+                      src="assets/images/team-member-1.webp"
+                      alt="Ime Prezime — Radni terapeut"
+                      class="w-32 h-32 lg:w-40 lg:h-40 object-cover rounded-3xl shadow-soft"
+                      loading="lazy"
+                      width="160"
+                      height="160"
+                    />
+                  </div>
+                  <div class="flex-1 text-center sm:text-left">
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-2 mb-3"
+                    >
+                      <!-- [EDITABLE: TEAM_2_NAME] -->
+                      <h3 class="text-xl font-700 text-gray-800">
+                        Ime Prezime
+                      </h3>
+                      <!-- [EDITABLE: TEAM_2_ROLE] -->
+                      <span
+                        class="inline-block px-3 py-1 bg-secondary-light text-secondary-dark text-xs font-600 rounded-full"
+                        >Radni terapeut</span
+                      >
+                    </div>
+                    <!-- [EDITABLE: TEAM_2_BIO] -->
+                    <p class="text-slate-soft text-sm leading-relaxed mb-4">
+                      Kratak opis radnika — specijalizacije i iskustvo u radu sa
+                      decom.
+                    </p>
+                    <!-- [EDITABLE: TEAM_2_TAGS] -->
+                    <div
+                      class="flex flex-wrap justify-center sm:justify-start gap-2"
+                    >
+                      <span
+                        class="px-3 py-1 bg-cream-soft text-slate-soft text-xs font-500 rounded-full"
+                        >Senzorna integracija</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-cream-soft text-slate-soft text-xs font-500 rounded-full"
+                        >ABA terapija</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- RADNIK 3 -->
+              <article
+                class="reveal bg-white rounded-4xl shadow-card hover:shadow-soft-lg transition-all duration-300"
+                style="--delay: 200ms"
+              >
+                <div
+                  class="flex flex-col sm:flex-row gap-6 p-6 lg:p-8 items-center sm:items-start"
+                >
+                  <div class="flex-shrink-0">
+                    <!-- [EDITABLE: TEAM_3_IMAGE] -->
+                    <img
+                      src="assets/images/team-member-3.webp"
+                      alt="Ime Prezime — Logoped"
+                      class="w-32 h-32 lg:w-40 lg:h-40 object-cover rounded-3xl shadow-soft"
+                      loading="lazy"
+                      width="160"
+                      height="160"
+                    />
+                  </div>
+                  <div class="flex-1 text-center sm:text-left">
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-2 mb-3"
+                    >
+                      <!-- [EDITABLE: TEAM_3_NAME] -->
+                      <h3 class="text-xl font-700 text-gray-800">
+                        Ime Prezime
+                      </h3>
+                      <!-- [EDITABLE: TEAM_3_ROLE] -->
+                      <span
+                        class="inline-block px-3 py-1 bg-accent-light text-accent-dark text-xs font-600 rounded-full"
+                        >Logoped</span
+                      >
+                    </div>
+                    <!-- [EDITABLE: TEAM_3_BIO] -->
+                    <p class="text-slate-soft text-sm leading-relaxed mb-4">
+                      Kratak opis radnika — specijalizacije i iskustvo u radu sa
+                      decom.
+                    </p>
+                    <!-- [EDITABLE: TEAM_3_TAGS] -->
+                    <div
+                      class="flex flex-wrap justify-center sm:justify-start gap-2"
+                    >
+                      <span
+                        class="px-3 py-1 bg-cream-soft text-slate-soft text-xs font-500 rounded-full"
+                        >Govor i jezik</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-cream-soft text-slate-soft text-xs font-500 rounded-full"
+                        >Gutanje</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ============================================================
+      <!-- ============================================================
          4. TESTIMONIALS / ISKUSTVA RODITELJA
          ============================================================ -->
-    <section id="iskustva" class="py-20 lg:py-28 bg-gradient-to-br from-primary-light/20 via-cream-soft to-mint-light/20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        id="iskustva"
+        class="py-20 lg:py-28 bg-gradient-to-br from-primary-light/20 via-cream-soft to-secondary-light/20"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+            <!-- [EDITABLE: TESTIMONIALS_BADGE] -->
+            <span
+              class="inline-block px-4 py-1.5 bg-primary-light text-primary-dark text-sm font-600 rounded-full mb-4"
+              >Iskustva roditelja</span
+            >
+            <!-- [EDITABLE: TESTIMONIALS_TITLE] -->
+            <h2 class="text-3xl sm:text-4xl font-700 text-gray-800">
+              Reči koje nas pokreću
+            </h2>
+          </div>
 
-        <div class="text-center max-w-2xl mx-auto mb-14 reveal">
-          <!-- [EDITABLE: TESTIMONIALS_BADGE] -->
-          <span class="inline-block px-4 py-1.5 bg-primary-light text-primary-dark text-sm font-600 rounded-full mb-4">Iskustva roditelja</span>
-          <!-- [EDITABLE: TESTIMONIALS_TITLE] -->
-          <h2 class="text-3xl sm:text-4xl font-700 text-gray-800">Reči koje nas pokreću</h2>
-        </div>
-
-        <!-- Slider kontejner -->
-        <div class="relative reveal" style="--delay:100ms">
-          <div class="overflow-hidden rounded-4xl" id="slider-wrapper">
-            <div class="flex transition-transform duration-500 ease-in-out" id="slider-track" aria-live="polite">
-
-              <!-- ==========================================
-                   [EDITABLE: TESTIMONIALS] - Iskustva roditelja
-                   Dodajte ili uklonite slide-ove po potrebi.
-                   Svaki slide je jedan div sa klasom slide
-                   ========================================== -->
-
-              <!-- SLIDE 1 -->
-              <div class="slide min-w-full px-4 lg:px-16" role="group" aria-label="Iskustvo 1 od 4">
-                <div class="bg-white rounded-4xl p-8 lg:p-12 shadow-card max-w-3xl mx-auto text-center">
-                  <div class="flex justify-center mb-5" aria-label="Ocena 5 od 5">
-                    <!-- 5 zvezda -->
-                    <div class="flex gap-1" aria-hidden="true">
-                      <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                      <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                      <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                      <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                      <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <div class="relative reveal" style="--delay: 100ms">
+            <div class="overflow-hidden rounded-4xl" id="slider-wrapper">
+              <div
+                class="flex transition-transform duration-500 ease-in-out"
+                id="slider-track"
+                aria-live="polite"
+              >
+                <!-- SLIDE 1 -->
+                <div
+                  class="slide min-w-full px-4 lg:px-16"
+                  role="group"
+                  aria-label="Iskustvo 1 od 4"
+                >
+                  <div
+                    class="bg-white rounded-4xl p-8 lg:p-12 shadow-card max-w-3xl mx-auto text-center"
+                  >
+                    <div
+                      class="flex justify-center gap-1 mb-5"
+                      aria-label="Ocena 5 od 5"
+                    >
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- [EDITABLE: TESTIMONIAL_1_TEXT] -->
+                    <blockquote
+                      class="text-gray-700 text-lg lg:text-xl leading-relaxed mb-8 italic"
+                    >
+                      "Kada smo prvi put došli u Fizio Detora, naš sin nije
+                      mogao da hoda. Posle 8 meseci Bobath terapije, njegova
+                      prva samostalna koraka su bila najlepši trenutak našeg
+                      života. Ovaj tim je naše čudo."
+                    </blockquote>
+                    <div class="flex items-center justify-center gap-3">
+                      <div
+                        class="w-12 h-12 rounded-full bg-primary-light flex items-center justify-center text-primary-dark font-700 text-lg"
+                        aria-hidden="true"
+                      >
+                        M
+                      </div>
+                      <div class="text-left">
+                        <!-- [EDITABLE: TESTIMONIAL_1_NAME] -->
+                        <p class="font-700 text-gray-800 text-sm">
+                          Marija Petrović
+                        </p>
+                        <!-- [EDITABLE: TESTIMONIAL_1_ROLE] -->
+                        <p class="text-xs text-slate-soft">
+                          Mama malog Stefana, 3 god.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <!-- [EDITABLE: TESTIMONIAL_1_TEXT] -->
-                  <blockquote class="text-gray-700 text-lg lg:text-xl leading-relaxed mb-8 italic">
-                    "Kada smo prvi put došli u Fizio Detora, naš sin nije mogao da hoda. Posle 8 meseci Bobath terapije, njegova prva samostalna koraka su bila najlepši trenutak našeg života. Ovaj tim je naše čudo."
-                  </blockquote>
-                  <div class="flex items-center justify-center gap-3">
-                    <!-- [EDITABLE: TESTIMONIAL_1_AVATAR] - Slika roditelja (opciono) -->
-                    <div class="w-12 h-12 rounded-full bg-primary-light flex items-center justify-center text-primary font-700 text-lg" aria-hidden="true">M</div>
-                    <div class="text-left">
-                      <!-- [EDITABLE: TESTIMONIAL_1_NAME] -->
-                      <p class="font-700 text-gray-800 text-sm">Marija Petrović</p>
-                      <!-- [EDITABLE: TESTIMONIAL_1_ROLE] -->
-                      <p class="text-xs text-slate-soft">Mama malog Stefana, 3 god.</p>
+                </div>
+
+                <!-- SLIDE 2 -->
+                <div
+                  class="slide min-w-full px-4 lg:px-16"
+                  role="group"
+                  aria-label="Iskustvo 2 od 4"
+                >
+                  <div
+                    class="bg-white rounded-4xl p-8 lg:p-12 shadow-card max-w-3xl mx-auto text-center"
+                  >
+                    <div
+                      class="flex justify-center gap-1 mb-5"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- [EDITABLE: TESTIMONIAL_2_TEXT] -->
+                    <blockquote
+                      class="text-gray-700 text-lg lg:text-xl leading-relaxed mb-8 italic"
+                    >
+                      "Senzorna integracija je promenila život naše ćerke i naše
+                      porodice. Terapeuti su strpljivi, stručni i toliko
+                      predani. Osećamo se prihvaćeno od prvog dana."
+                    </blockquote>
+                    <div class="flex items-center justify-center gap-3">
+                      <div
+                        class="w-12 h-12 rounded-full bg-secondary-light flex items-center justify-center text-secondary-dark font-700 text-lg"
+                        aria-hidden="true"
+                      >
+                        J
+                      </div>
+                      <div class="text-left">
+                        <!-- [EDITABLE: TESTIMONIAL_2_NAME] -->
+                        <p class="font-700 text-gray-800 text-sm">
+                          Jovana Nikolić
+                        </p>
+                        <!-- [EDITABLE: TESTIMONIAL_2_ROLE] -->
+                        <p class="text-xs text-slate-soft">
+                          Mama male Anje, 5 god.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SLIDE 3 -->
+                <div
+                  class="slide min-w-full px-4 lg:px-16"
+                  role="group"
+                  aria-label="Iskustvo 3 od 4"
+                >
+                  <div
+                    class="bg-white rounded-4xl p-8 lg:p-12 shadow-card max-w-3xl mx-auto text-center"
+                  >
+                    <div
+                      class="flex justify-center gap-1 mb-5"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- [EDITABLE: TESTIMONIAL_3_TEXT] -->
+                    <blockquote
+                      class="text-gray-700 text-lg lg:text-xl leading-relaxed mb-8 italic"
+                    >
+                      "Vojta terapija kod odojčeta zvuči strašno, ali tim nas je
+                      savršeno pripremio. Naš sin je sada zdrav i aktivan
+                      šestogodišnjak. Preporučujemo svima sa punim srcem."
+                    </blockquote>
+                    <div class="flex items-center justify-center gap-3">
+                      <div
+                        class="w-12 h-12 rounded-full bg-primary-light flex items-center justify-center text-primary-dark font-700 text-lg"
+                        aria-hidden="true"
+                      >
+                        D
+                      </div>
+                      <div class="text-left">
+                        <!-- [EDITABLE: TESTIMONIAL_3_NAME] -->
+                        <p class="font-700 text-gray-800 text-sm">
+                          Dragan i Ivana Jović
+                        </p>
+                        <!-- [EDITABLE: TESTIMONIAL_3_ROLE] -->
+                        <p class="text-xs text-slate-soft">
+                          Roditelji malog Milana
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SLIDE 4 -->
+                <div
+                  class="slide min-w-full px-4 lg:px-16"
+                  role="group"
+                  aria-label="Iskustvo 4 od 4"
+                >
+                  <div
+                    class="bg-white rounded-4xl p-8 lg:p-12 shadow-card max-w-3xl mx-auto text-center"
+                  >
+                    <div
+                      class="flex justify-center gap-1 mb-5"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-5 h-5 text-accent"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- [EDITABLE: TESTIMONIAL_4_TEXT] -->
+                    <blockquote
+                      class="text-gray-700 text-lg lg:text-xl leading-relaxed mb-8 italic"
+                    >
+                      "ABA terapija je dala našoj Maji glas koji nikada nismo
+                      čuli. Logopedi su neverovatni. Ovo nije samo klinika — ovo
+                      je zajednica koja vas drži za ruku."
+                    </blockquote>
+                    <div class="flex items-center justify-center gap-3">
+                      <div
+                        class="w-12 h-12 rounded-full bg-accent-light flex items-center justify-center text-accent-dark font-700 text-lg"
+                        aria-hidden="true"
+                      >
+                        S
+                      </div>
+                      <div class="text-left">
+                        <!-- [EDITABLE: TESTIMONIAL_4_NAME] -->
+                        <p class="font-700 text-gray-800 text-sm">
+                          Snežana Milovanović
+                        </p>
+                        <!-- [EDITABLE: TESTIMONIAL_4_ROLE] -->
+                        <p class="text-xs text-slate-soft">
+                          Mama male Maje, 7 god.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <!-- SLIDE 2 -->
-              <div class="slide min-w-full px-4 lg:px-16" role="group" aria-label="Iskustvo 2 od 4">
-                <div class="bg-white rounded-4xl p-8 lg:p-12 shadow-card max-w-3xl mx-auto text-center">
-                  <div class="flex justify-center gap-1 mb-5" aria-label="Ocena 5 od 5" aria-hidden="true">
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                  </div>
-                  <!-- [EDITABLE: TESTIMONIAL_2_TEXT] -->
-                  <blockquote class="text-gray-700 text-lg lg:text-xl leading-relaxed mb-8 italic">
-                    "Senzorna integracija je promenila život naše ćerke i naše porodice. Terapeuti su strpljivi, stručni i toliko predani. Osećamo se prihvaćeno od prvog dana."
-                  </blockquote>
-                  <div class="flex items-center justify-center gap-3">
-                    <div class="w-12 h-12 rounded-full bg-mint-light flex items-center justify-center text-mint-dark font-700 text-lg" aria-hidden="true">J</div>
-                    <div class="text-left">
-                      <!-- [EDITABLE: TESTIMONIAL_2_NAME] -->
-                      <p class="font-700 text-gray-800 text-sm">Jovana Nikolić</p>
-                      <!-- [EDITABLE: TESTIMONIAL_2_ROLE] -->
-                      <p class="text-xs text-slate-soft">Mama male Anje, 5 god.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- SLIDE 3 -->
-              <div class="slide min-w-full px-4 lg:px-16" role="group" aria-label="Iskustvo 3 od 4">
-                <div class="bg-white rounded-4xl p-8 lg:p-12 shadow-card max-w-3xl mx-auto text-center">
-                  <div class="flex justify-center gap-1 mb-5" aria-hidden="true">
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                  </div>
-                  <!-- [EDITABLE: TESTIMONIAL_3_TEXT] -->
-                  <blockquote class="text-gray-700 text-lg lg:text-xl leading-relaxed mb-8 italic">
-                    "Vojta terapija kod odojčeta zvuči strašno, ali tim nas je savršeno pripremio. Naš sin je sada zdrav i aktivan šestogodišnjak. Preporučujemo svima sa punim srcem."
-                  </blockquote>
-                  <div class="flex items-center justify-center gap-3">
-                    <div class="w-12 h-12 rounded-full bg-secondary-light flex items-center justify-center text-secondary-dark font-700 text-lg" aria-hidden="true">D</div>
-                    <div class="text-left">
-                      <!-- [EDITABLE: TESTIMONIAL_3_NAME] -->
-                      <p class="font-700 text-gray-800 text-sm">Dragan i Ivana Jović</p>
-                      <!-- [EDITABLE: TESTIMONIAL_3_ROLE] -->
-                      <p class="text-xs text-slate-soft">Roditelji malog Milana</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- SLIDE 4 -->
-              <div class="slide min-w-full px-4 lg:px-16" role="group" aria-label="Iskustvo 4 od 4">
-                <div class="bg-white rounded-4xl p-8 lg:p-12 shadow-card max-w-3xl mx-auto text-center">
-                  <div class="flex justify-center gap-1 mb-5" aria-hidden="true">
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                  </div>
-                  <!-- [EDITABLE: TESTIMONIAL_4_TEXT] -->
-                  <blockquote class="text-gray-700 text-lg lg:text-xl leading-relaxed mb-8 italic">
-                    "ABA terapija je dala našoj Maji glas koji nikada nismo čuli. Logopedi su neverovatni. Ovo nije samo klinika — ovo je zajednica koja vas drži za ruku."
-                  </blockquote>
-                  <div class="flex items-center justify-center gap-3">
-                    <div class="w-12 h-12 rounded-full bg-cream-warm border border-primary-light flex items-center justify-center text-primary font-700 text-lg" aria-hidden="true">S</div>
-                    <div class="text-left">
-                      <!-- [EDITABLE: TESTIMONIAL_4_NAME] -->
-                      <p class="font-700 text-gray-800 text-sm">Snežana Milovanović</p>
-                      <!-- [EDITABLE: TESTIMONIAL_4_ROLE] -->
-                      <p class="text-xs text-slate-soft">Mama male Maje, 7 god.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div><!-- /slider-track -->
-          </div><!-- /slider-wrapper -->
-
-          <!-- Slider kontrole -->
-          <div class="flex items-center justify-center gap-4 mt-8">
-            <button id="slider-prev" class="w-11 h-11 bg-white rounded-2xl shadow-card flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" aria-label="Prethodno iskustvo">
-              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
-            </button>
-            <!-- Dots indikatori -->
-            <div class="flex gap-2" id="slider-dots" role="tablist" aria-label="Navigacija iskustava"></div>
-            <button id="slider-next" class="w-11 h-11 bg-white rounded-2xl shadow-card flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" aria-label="Sledeće iskustvo">
-              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-            </button>
+            <div class="flex items-center justify-center gap-4 mt-8">
+              <button
+                id="slider-prev"
+                class="w-11 h-11 bg-white rounded-2xl shadow-card flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                aria-label="Prethodno iskustvo"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <div
+                class="flex gap-2"
+                id="slider-dots"
+                role="tablist"
+                aria-label="Navigacija iskustava"
+              ></div>
+              <button
+                id="slider-next"
+                class="w-11 h-11 bg-white rounded-2xl shadow-card flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                aria-label="Sledeće iskustvo"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-    <!-- ============================================================
+      <!-- ============================================================
          5. FAQ ACCORDION
          ============================================================ -->
-    <section id="faq" class="py-20 lg:py-28 bg-cream">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="faq" class="py-20 lg:py-28 bg-cream">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-14 reveal">
+            <!-- [EDITABLE: FAQ_BADGE] -->
+            <span
+              class="inline-block px-4 py-1.5 bg-accent-light text-accent-dark text-sm font-600 rounded-full mb-4 border border-accent"
+              >Česta pitanja</span
+            >
+            <!-- [EDITABLE: FAQ_TITLE] -->
+            <h2 class="text-3xl sm:text-4xl font-700 text-gray-800">
+              Imate pitanja? Imamo odgovore.
+            </h2>
+          </div>
 
-        <div class="text-center mb-14 reveal">
-          <!-- [EDITABLE: FAQ_BADGE] -->
-          <span class="inline-block px-4 py-1.5 bg-cream-soft text-slate-soft text-sm font-600 rounded-full mb-4 border border-gray-100">Česta pitanja</span>
-          <!-- [EDITABLE: FAQ_TITLE] -->
-          <h2 class="text-3xl sm:text-4xl font-700 text-gray-800">Imate pitanja? Imamo odgovore.</h2>
+          <div class="space-y-3 reveal" style="--delay: 100ms" role="list">
+            <div
+              class="faq-item bg-white rounded-3xl shadow-card overflow-hidden"
+              role="listitem"
+            >
+              <button
+                class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset"
+                aria-expanded="false"
+              >
+                <!-- [EDITABLE: FAQ_Q_1] -->
+                <span class="font-600 text-gray-800 text-sm sm:text-base pr-4"
+                  >U kom uzrastu je preporučljivo početi sa terapijom?</span
+                >
+                <span
+                  class="flex-shrink-0 w-8 h-8 bg-cream-soft rounded-xl flex items-center justify-center transition-transform duration-300 faq-icon"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-4 h-4 text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-content hidden px-6 pb-5">
+                <!-- [EDITABLE: FAQ_A_1] -->
+                <p class="text-slate-soft text-sm leading-relaxed">
+                  Što pre, to bolje! Mozak je najplastičniji u prvih 5 godina
+                  života. Vojta terapija može početi već od prvog meseca, dok su
+                  Bobath i senzorna integracija pogodne za sva uzrasta.
+                  Savetujemo da nas kontaktirate čim primetite zabrinutost u
+                  razvoju.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="faq-item bg-white rounded-3xl shadow-card overflow-hidden"
+              role="listitem"
+            >
+              <button
+                class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset"
+                aria-expanded="false"
+              >
+                <!-- [EDITABLE: FAQ_Q_2] -->
+                <span class="font-600 text-gray-800 text-sm sm:text-base pr-4"
+                  >Koliko dugo traje jedna terapijska sesija?</span
+                >
+                <span
+                  class="flex-shrink-0 w-8 h-8 bg-cream-soft rounded-xl flex items-center justify-center transition-transform duration-300 faq-icon"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-4 h-4 text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-content hidden px-6 pb-5">
+                <!-- [EDITABLE: FAQ_A_2] -->
+                <p class="text-slate-soft text-sm leading-relaxed">
+                  Standardna sesija traje 45–60 minuta, u zavisnosti od terapije
+                  i uzrasta deteta. Prvih 10 minuta je uvek posvećeno razgovoru
+                  sa roditeljima. Za odojčad, sesije mogu biti kraće — 30–40
+                  minuta.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="faq-item bg-white rounded-3xl shadow-card overflow-hidden"
+              role="listitem"
+            >
+              <button
+                class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset"
+                aria-expanded="false"
+              >
+                <!-- [EDITABLE: FAQ_Q_3] -->
+                <span class="font-600 text-gray-800 text-sm sm:text-base pr-4"
+                  >Da li je terapija bolna ili strašna za dete?</span
+                >
+                <span
+                  class="flex-shrink-0 w-8 h-8 bg-cream-soft rounded-xl flex items-center justify-center transition-transform duration-300 faq-icon"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-4 h-4 text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-content hidden px-6 pb-5">
+                <!-- [EDITABLE: FAQ_A_3] -->
+                <p class="text-slate-soft text-sm leading-relaxed">
+                  Ne. Sve naše terapije su prilagođene uzrastu i podnošljivosti
+                  deteta. Vojta terapija može izazvati plač koji je normalan
+                  fiziološki odgovor, ali ne znači da je dete povređeno.
+                  Terapeuti kontinuirano prate reakcije deteta i prilagođavaju
+                  intenzitet.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="faq-item bg-white rounded-3xl shadow-card overflow-hidden"
+              role="listitem"
+            >
+              <button
+                class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset"
+                aria-expanded="false"
+              >
+                <!-- [EDITABLE: FAQ_Q_4] -->
+                <span class="font-600 text-gray-800 text-sm sm:text-base pr-4"
+                  >Da li refundira RFZO / osiguranje?</span
+                >
+                <span
+                  class="flex-shrink-0 w-8 h-8 bg-cream-soft rounded-xl flex items-center justify-center transition-transform duration-300 faq-icon"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-4 h-4 text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-content hidden px-6 pb-5">
+                <!-- [EDITABLE: FAQ_A_4] -->
+                <p class="text-slate-soft text-sm leading-relaxed">
+                  Deo usluga je pokriven RFZO uputnicom. Konkretne informacije
+                  zavise od dijagnoze i uputa. Naš tim će vam pomoći da razumete
+                  koji troškovi mogu biti refundirani i kako da podnesete
+                  zahtev. Kontaktirajte nas za individualno savetovanje.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="faq-item bg-white rounded-3xl shadow-card overflow-hidden"
+              role="listitem"
+            >
+              <button
+                class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset"
+                aria-expanded="false"
+              >
+                <!-- [EDITABLE: FAQ_Q_5] -->
+                <span class="font-600 text-gray-800 text-sm sm:text-base pr-4"
+                  >Kako izgleda prva poseta i šta da ponesem?</span
+                >
+                <span
+                  class="flex-shrink-0 w-8 h-8 bg-cream-soft rounded-xl flex items-center justify-center transition-transform duration-300 faq-icon"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-4 h-4 text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-content hidden px-6 pb-5">
+                <!-- [EDITABLE: FAQ_A_5] -->
+                <p class="text-slate-soft text-sm leading-relaxed">
+                  Prva poseta je inicijalna procena (45–60 min). Ponesite
+                  zdravstvenu knjižicu deteta, medicinsku dokumentaciju, nalaze
+                  neuroloških ili razvojnih pregleda i listu pitanja. Dete treba
+                  da je nahranjeno i odmorno. Procena uključuje razgovor sa
+                  roditeljima i posmatranje deteta u igri.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <!-- Accordion lista -->
-        <!-- [EDITABLE: FAQ_ITEMS] - Dodajte/uklonite pitanja i odgovore po potrebi -->
-        <div class="space-y-3 reveal" style="--delay:100ms" role="list">
-
-          <div class="faq-item bg-white rounded-3xl shadow-card overflow-hidden" role="listitem">
-            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false">
-              <!-- [EDITABLE: FAQ_Q_1] -->
-              <span class="font-600 text-gray-800 text-sm sm:text-base pr-4">U kom uzrastu je preporučljivo početi sa terapijom?</span>
-              <span class="flex-shrink-0 w-8 h-8 bg-cream-soft rounded-xl flex items-center justify-center transition-transform duration-300 faq-icon" aria-hidden="true">
-                <svg class="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-              </span>
-            </button>
-            <div class="faq-content hidden px-6 pb-5">
-              <!-- [EDITABLE: FAQ_A_1] -->
-              <p class="text-slate-soft text-sm leading-relaxed">Što pre, to bolje! Mozak je najplastičniji u prvih 5 godina života. Vojta terapija može početi već od prvog meseca, dok su Bobath i senzorna integracija pogodne za sva uzrasta. Savetujemo da nas kontaktirate čim primetite zabrinutost u razvoju.</p>
-            </div>
-          </div>
-
-          <div class="faq-item bg-white rounded-3xl shadow-card overflow-hidden" role="listitem">
-            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false">
-              <!-- [EDITABLE: FAQ_Q_2] -->
-              <span class="font-600 text-gray-800 text-sm sm:text-base pr-4">Koliko dugo traje jedna terapijska sesija?</span>
-              <span class="flex-shrink-0 w-8 h-8 bg-cream-soft rounded-xl flex items-center justify-center transition-transform duration-300 faq-icon" aria-hidden="true">
-                <svg class="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-              </span>
-            </button>
-            <div class="faq-content hidden px-6 pb-5">
-              <!-- [EDITABLE: FAQ_A_2] -->
-              <p class="text-slate-soft text-sm leading-relaxed">Standardna sesija traje 45–60 minuta, u zavisnosti od terapije i uzrasta deteta. Prvih 10 minuta je uvek posvećeno razgovoru sa roditeljima. Za odojčad, sesije mogu biti kraće — 30–40 minuta.</p>
-            </div>
-          </div>
-
-          <div class="faq-item bg-white rounded-3xl shadow-card overflow-hidden" role="listitem">
-            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false">
-              <!-- [EDITABLE: FAQ_Q_3] -->
-              <span class="font-600 text-gray-800 text-sm sm:text-base pr-4">Da li je terapija bolna ili strašna za dete?</span>
-              <span class="flex-shrink-0 w-8 h-8 bg-cream-soft rounded-xl flex items-center justify-center transition-transform duration-300 faq-icon" aria-hidden="true">
-                <svg class="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-              </span>
-            </button>
-            <div class="faq-content hidden px-6 pb-5">
-              <!-- [EDITABLE: FAQ_A_3] -->
-              <p class="text-slate-soft text-sm leading-relaxed">Ne. Sve naše terapije su prilagođene uzrastu i podnošljivosti deteta. Vojta terapija može izazvati plač koji je normalan fiziološki odgovor, ali ne znači da je dete povređeno. Terapeuti kontinuirano prate reakcije deteta i prilagođavaju intenzitet.</p>
-            </div>
-          </div>
-
-          <div class="faq-item bg-white rounded-3xl shadow-card overflow-hidden" role="listitem">
-            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false">
-              <!-- [EDITABLE: FAQ_Q_4] -->
-              <span class="font-600 text-gray-800 text-sm sm:text-base pr-4">Da li refundira RFZO / osiguranje?</span>
-              <span class="flex-shrink-0 w-8 h-8 bg-cream-soft rounded-xl flex items-center justify-center transition-transform duration-300 faq-icon" aria-hidden="true">
-                <svg class="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-              </span>
-            </button>
-            <div class="faq-content hidden px-6 pb-5">
-              <!-- [EDITABLE: FAQ_A_4] -->
-              <p class="text-slate-soft text-sm leading-relaxed">Deo usluga je pokriven RFZO uputnicom. Konkretne informacije zavise od dijagnoze i uputa. Naš tim će vam pomoći da razumete koji troškovi mogu biti refundirani i kako da podnesete zahtev. Kontaktirajte nas za individualno savetovanje.</p>
-            </div>
-          </div>
-
-          <div class="faq-item bg-white rounded-3xl shadow-card overflow-hidden" role="listitem">
-            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false">
-              <!-- [EDITABLE: FAQ_Q_5] -->
-              <span class="font-600 text-gray-800 text-sm sm:text-base pr-4">Kako izgleda prva poseta i šta da ponесem?</span>
-              <span class="flex-shrink-0 w-8 h-8 bg-cream-soft rounded-xl flex items-center justify-center transition-transform duration-300 faq-icon" aria-hidden="true">
-                <svg class="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-              </span>
-            </button>
-            <div class="faq-content hidden px-6 pb-5">
-              <!-- [EDITABLE: FAQ_A_5] -->
-              <p class="text-slate-soft text-sm leading-relaxed">Prva poseta je inicijalna procena (45–60 min). Ponesite zdravstvenu knjižicu deteta, medicinsku dokumentaciju, nalaze neuroloških ili razvojnih pregleda i listu pitanja. Dete treba da je nahranjeno i odmorno. Procena uključuje razgovor sa roditeljima i posmatranje deteta u igri.</p>
-            </div>
-          </div>
-
-        </div><!-- /accordion -->
-      </div>
-    </section>
-
-    <!-- ============================================================
+      <!-- ============================================================
          6. KONTAKT & MAPA
          ============================================================ -->
-    <section id="kontakt" class="py-20 lg:py-28 bg-cream-soft">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <div class="text-center max-w-2xl mx-auto mb-14 reveal">
-          <!-- [EDITABLE: CONTACT_BADGE] -->
-          <span class="inline-block px-4 py-1.5 bg-primary-light text-primary-dark text-sm font-600 rounded-full mb-4">Kontakt</span>
-          <!-- [EDITABLE: CONTACT_TITLE] -->
-          <h2 class="text-3xl sm:text-4xl font-700 text-gray-800 mb-4">Zakažite termin danas</h2>
-          <!-- [EDITABLE: CONTACT_SUBTITLE] -->
-          <p class="text-slate-soft">Popunite formu i javićemo vam se u roku od 24 sata, ili nas pozovite direktno.</p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
-
-          <!-- Forma (3/5) -->
-          <div class="lg:col-span-3 reveal" style="--delay:0ms">
-            <div class="bg-white rounded-4xl p-7 lg:p-10 shadow-card">
-              <h3 class="text-lg font-700 text-gray-800 mb-6">Pošaljite nam poruku</h3>
-
-              <!-- [EDITABLE: CONTACT_FORM] -->
-
-              <form id="contact-form" action="https://formspree.io/f/xqejgvvn" method="POST" novalidate class="space-y-4">
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label for="parent-name" class="block text-sm font-600 text-gray-700 mb-1.5">Ime i prezime roditelja <span class="text-red-400" aria-hidden="true">*</span></label>
-                    <input type="text" id="parent-name" name="parent-name" required autocomplete="name"
-                      class="w-full px-4 py-3 bg-cream-soft rounded-2xl border border-transparent focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm text-gray-700 placeholder:text-gray-400"
-                      placeholder="Marija Petrović" />
-                  </div>
-                  <div>
-                    <label for="child-name" class="block text-sm font-600 text-gray-700 mb-1.5">Ime deteta i uzrast</label>
-                    <input type="text" id="child-name" name="child-name" autocomplete="off"
-                      class="w-full px-4 py-3 bg-cream-soft rounded-2xl border border-transparent focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm text-gray-700 placeholder:text-gray-400"
-                      placeholder="Stefan, 3 god." />
-                  </div>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label for="phone" class="block text-sm font-600 text-gray-700 mb-1.5">Telefon <span class="text-red-400" aria-hidden="true">*</span></label>
-                    <input type="tel" id="phone" name="phone" required autocomplete="tel"
-                      class="w-full px-4 py-3 bg-cream-soft rounded-2xl border border-transparent focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm text-gray-700 placeholder:text-gray-400"
-                      placeholder="+381 60 123 4567" />
-                  </div>
-                  <div>
-                    <label for="email" class="block text-sm font-600 text-gray-700 mb-1.5">Email adresa</label>
-                    <input type="email" id="email" name="email" autocomplete="email"
-                      class="w-full px-4 py-3 bg-cream-soft rounded-2xl border border-transparent focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm text-gray-700 placeholder:text-gray-400"
-                      placeholder="marija@primer.rs" />
-                  </div>
-                </div>
-
-                <!-- [EDITABLE: CONTACT_SERVICES_LIST] - Lista usluga u select-u -->
-                <div>
-                  <label for="service" class="block text-sm font-600 text-gray-700 mb-1.5">Zainteresovani ste za</label>
-                  <select id="service" name="service"
-                    class="w-full px-4 py-3 bg-cream-soft rounded-2xl border border-transparent focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm text-gray-700 appearance-none cursor-pointer">
-                    <option value="">— Izaberite terapiju —</option>
-                    <option value="bobath">Bobath terapija</option>
-                    <option value="vojta">Vojta terapija</option>
-                    <option value="senzorna">Senzorna integracija</option>
-                    <option value="govor">Govorno-jezička terapija</option>
-                    <option value="aba">ABA terapija</option>
-                    <option value="procena">Inicijalna procena</option>
-                    <option value="konsultacije">Besplatne konsultacije</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label for="message" class="block text-sm font-600 text-gray-700 mb-1.5">Poruka / Kratki opis situacije</label>
-                  <textarea id="message" name="message" rows="4"
-                    class="w-full px-4 py-3 bg-cream-soft rounded-2xl border border-transparent focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm text-gray-700 placeholder:text-gray-400 resize-none"
-                    placeholder="Opišite nam ukratko situaciju vašeg deteta, dosadašnje dijagnoze ili zabrinutosti..."></textarea>
-                </div>
-
-                <!-- GDPR consent -->
-                <div class="flex items-start gap-3">
-                  <input type="checkbox" id="gdpr" name="gdpr" required class="mt-0.5 w-4 h-4 rounded accent-primary cursor-pointer flex-shrink-0" />
-                  <label for="gdpr" class="text-xs text-slate-soft leading-relaxed cursor-pointer">
-                    <!-- [EDITABLE: GDPR_TEXT] - Tekst saglasnosti sa GDPR -->
-                    Saglasan/na sam da klinika obradi moje lične podatke u svrhu zakazivanja termina i komunikacije, u skladu sa
-                    <a href="#" class="text-primary hover:underline font-600">Politikom privatnosti</a>.
-                  </label>
-                </div>
-
-                <button type="submit" id="submit-btn" class="w-full py-4 bg-primary text-white font-700 rounded-2xl shadow-soft hover:bg-primary-dark hover:shadow-soft-lg hover:-translate-y-0.5 transition-all duration-200 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
-                  Pošaljite poruku
-                  <svg class="inline-block w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-                </button>
-
-                <!-- Success/Error poruka -->
-                <div id="form-message" class="hidden rounded-2xl px-4 py-3 text-sm font-500 text-center" role="alert" aria-live="polite"></div>
-
-              </form>
-            </div>
+      <section id="kontakt" class="py-20 lg:py-28 bg-cream-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+            <!-- [EDITABLE: CONTACT_BADGE] -->
+            <span
+              class="inline-block px-4 py-1.5 bg-primary-light text-primary-dark text-sm font-600 rounded-full mb-4"
+              >Kontakt</span
+            >
+            <!-- [EDITABLE: CONTACT_TITLE] -->
+            <h2 class="text-3xl sm:text-4xl font-700 text-gray-800 mb-4">
+              Zakažite termin danas
+            </h2>
+            <!-- [EDITABLE: CONTACT_SUBTITLE] -->
+            <p class="text-slate-soft">
+              Popunite formu i javićemo vam se u roku od 24 sata, ili nas
+              pozovite direktno.
+            </p>
           </div>
 
-          <!-- Kontakt info + mapa (2/5) -->
-          <div class="lg:col-span-2 space-y-5 reveal" style="--delay:150ms">
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+            <!-- Forma (3/5) -->
+            <div class="lg:col-span-3 reveal" style="--delay: 0ms">
+              <div class="bg-white rounded-4xl p-7 lg:p-10 shadow-card">
+                <h3 class="text-lg font-700 text-gray-800 mb-6">
+                  Pošaljite nam poruku
+                </h3>
+                <!-- [EDITABLE: CONTACT_FORM] - Za Formspree: action="https://formspree.io/f/VAŠ_ID" -->
+                <form
+                  id="contact-form"
+                  action="https://formspree.io/f/xqejgvvn"
+                  method="POST"
+                  novalidate
+                  class="space-y-4"
+                >
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label
+                        for="parent-name"
+                        class="block text-sm font-600 text-gray-700 mb-1.5"
+                        >Ime i prezime roditelja
+                        <span class="text-red-400" aria-hidden="true"
+                          >*</span
+                        ></label
+                      >
+                      <input
+                        type="text"
+                        id="parent-name"
+                        name="parent-name"
+                        required
+                        autocomplete="name"
+                        class="w-full px-4 py-3 bg-cream-soft rounded-2xl border border-transparent focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm text-gray-700 placeholder:text-gray-400"
+                        placeholder="Marija Petrović"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="child-name"
+                        class="block text-sm font-600 text-gray-700 mb-1.5"
+                        >Ime deteta i uzrast</label
+                      >
+                      <input
+                        type="text"
+                        id="child-name"
+                        name="child-name"
+                        autocomplete="off"
+                        class="w-full px-4 py-3 bg-cream-soft rounded-2xl border border-transparent focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm text-gray-700 placeholder:text-gray-400"
+                        placeholder="Stefan, 3 god."
+                      />
+                    </div>
+                  </div>
 
-            <!-- Kontakt kartice -->
-            <!-- [EDITABLE: CONTACT_PHONE] - Broj telefona klinike -->
-            <a href="tel:+381110000000" class="flex items-center gap-4 bg-white rounded-3xl p-5 shadow-card hover:shadow-soft-lg hover:-translate-y-0.5 transition-all group">
-              <div class="w-12 h-12 bg-primary-light rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors" aria-hidden="true">
-                <svg class="w-5 h-5 text-primary group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              </div>
-              <div>
-                <p class="text-xs text-slate-soft font-500 mb-0.5">Telefon</p>
-                <p class="text-sm font-700 text-gray-800">+381 600149992</p>
-              </div>
-            </a>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label
+                        for="phone"
+                        class="block text-sm font-600 text-gray-700 mb-1.5"
+                        >Telefon
+                        <span class="text-red-400" aria-hidden="true"
+                          >*</span
+                        ></label
+                      >
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                        autocomplete="tel"
+                        class="w-full px-4 py-3 bg-cream-soft rounded-2xl border border-transparent focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm text-gray-700 placeholder:text-gray-400"
+                        placeholder="+381 60 123 4567"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="email"
+                        class="block text-sm font-600 text-gray-700 mb-1.5"
+                        >Email adresa</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        class="w-full px-4 py-3 bg-cream-soft rounded-2xl border border-transparent focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm text-gray-700 placeholder:text-gray-400"
+                        placeholder="marija@primer.rs"
+                      />
+                    </div>
+                  </div>
 
-            <!-- [EDITABLE: CONTACT_EMAIL] -->
-            <a href="mailto:fiziodetora@yahoo.com" class="flex items-center gap-4 bg-white rounded-3xl p-5 shadow-card hover:shadow-soft-lg hover:-translate-y-0.5 transition-all group">
-              <div class="w-12 h-12 bg-mint-light rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-mint transition-colors" aria-hidden="true">
-                <svg class="w-5 h-5 text-mint-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              </div>
-              <div>
-                <p class="text-xs text-slate-soft font-500 mb-0.5">Email</p>
-                <p class="text-sm font-700 text-gray-800">fiziodetora@yahoo.com</p>
-              </div>
-            </a>
+                  <!-- [EDITABLE: CONTACT_SERVICES_LIST] -->
+                  <div>
+                    <label
+                      for="service"
+                      class="block text-sm font-600 text-gray-700 mb-1.5"
+                      >Zainteresovani ste za</label
+                    >
+                    <select
+                      id="service"
+                      name="service"
+                      class="w-full px-4 py-3 bg-cream-soft rounded-2xl border border-transparent focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm text-gray-700 appearance-none cursor-pointer"
+                    >
+                      <option value="">— Izaberite terapiju —</option>
+                      <option value="bobath">Bobath terapija</option>
+                      <option value="vojta">Vojta terapija</option>
+                      <option value="senzorna">Senzorna integracija</option>
+                      <option value="govor">Govorno-jezička terapija</option>
+                      <option value="aba">ABA terapija</option>
+                      <option value="procena">Inicijalna procena</option>
+                      <option value="konsultacije">
+                        Besplatne konsultacije
+                      </option>
+                    </select>
+                  </div>
 
-            <!-- [EDITABLE: CONTACT_ADDRESS] -->
-            <div class="flex items-center gap-4 bg-white rounded-3xl p-5 shadow-card">
-              <div class="w-12 h-12 bg-secondary-light rounded-2xl flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                <svg class="w-5 h-5 text-secondary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              </div>
-              <div>
-                <p class="text-xs text-slate-soft font-500 mb-0.5">Adresa</p>
-                <p class="text-sm font-700 text-gray-800">Bulevar Kralja Petra I 6, Smederevska Palanka</p>
+                  <div>
+                    <label
+                      for="message"
+                      class="block text-sm font-600 text-gray-700 mb-1.5"
+                      >Poruka / Kratki opis situacije</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      class="w-full px-4 py-3 bg-cream-soft rounded-2xl border border-transparent focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm text-gray-700 placeholder:text-gray-400 resize-none"
+                      placeholder="Opišite nam ukratko situaciju vašeg deteta, dosadašnje dijagnoze ili zabrinutosti..."
+                    ></textarea>
+                  </div>
+
+                  <div class="flex items-start gap-3">
+                    <input
+                      type="checkbox"
+                      id="gdpr"
+                      name="gdpr"
+                      required
+                      class="mt-0.5 w-4 h-4 rounded accent-primary cursor-pointer flex-shrink-0"
+                    />
+                    <label
+                      for="gdpr"
+                      class="text-xs text-slate-soft leading-relaxed cursor-pointer"
+                    >
+                      <!-- [EDITABLE: GDPR_TEXT] -->
+                      Saglasan/na sam da klinika obradi moje lične podatke u
+                      svrhu zakazivanja termina i komunikacije, u skladu sa
+                      <a href="#" class="text-primary hover:underline font-600"
+                        >Politikom privatnosti</a
+                      >.
+                    </label>
+                  </div>
+
+                  <button
+                    type="submit"
+                    id="submit-btn"
+                    class="w-full py-4 bg-primary text-white font-700 rounded-2xl shadow-soft hover:bg-primary-dark hover:shadow-soft-lg hover:-translate-y-0.5 transition-all duration-200 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  >
+                    Pošaljite poruku
+                    <svg
+                      class="inline-block w-4 h-4 ml-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </button>
+
+                  <div
+                    id="form-message"
+                    class="hidden rounded-2xl px-4 py-3 text-sm font-500 text-center"
+                    role="alert"
+                    aria-live="polite"
+                  ></div>
+                </form>
               </div>
             </div>
 
-            <!-- [EDITABLE: CONTACT_HOURS] - Radno vreme -->
-            <div class="flex items-center gap-4 bg-white rounded-3xl p-5 shadow-card">
-              <div class="w-12 h-12 bg-cream-warm border border-gray-100 rounded-2xl flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <!-- Kontakt info + mapa (2/5) -->
+            <div class="lg:col-span-2 space-y-5 reveal" style="--delay: 150ms">
+              <!-- [EDITABLE: CONTACT_PHONE] -->
+              <a
+                href="tel:+381600149992"
+                class="flex items-center gap-4 bg-white rounded-3xl p-5 shadow-card hover:shadow-soft-lg hover:-translate-y-0.5 transition-all group"
+              >
+                <div
+                  class="w-12 h-12 bg-primary-light rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-5 h-5 text-primary group-hover:text-white transition-colors"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-soft font-500 mb-0.5">Telefon</p>
+                  <p class="text-sm font-700 text-gray-800">+381 600149992</p>
+                </div>
+              </a>
+
+              <!-- [EDITABLE: CONTACT_EMAIL] -->
+              <a
+                href="mailto:fiziodetora@yahoo.com"
+                class="flex items-center gap-4 bg-white rounded-3xl p-5 shadow-card hover:shadow-soft-lg hover:-translate-y-0.5 transition-all group"
+              >
+                <div
+                  class="w-12 h-12 bg-secondary-light rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-secondary transition-colors"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-5 h-5 text-secondary-dark group-hover:text-white transition-colors"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-soft font-500 mb-0.5">Email</p>
+                  <p class="text-sm font-700 text-gray-800">
+                    fiziodetora@yahoo.com
+                  </p>
+                </div>
+              </a>
+
+              <!-- [EDITABLE: CONTACT_ADDRESS] -->
+              <div
+                class="flex items-center gap-4 bg-white rounded-3xl p-5 shadow-card"
+              >
+                <div
+                  class="w-12 h-12 bg-accent-light rounded-2xl flex items-center justify-center flex-shrink-0"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-5 h-5 text-accent-dark"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-soft font-500 mb-0.5">Adresa</p>
+                  <p class="text-sm font-700 text-gray-800">
+                    Bulevar Kralja Petra I 6, Smederevska Palanka
+                  </p>
+                </div>
               </div>
-              <div>
-                <p class="text-xs text-slate-soft font-500 mb-0.5">Radno vreme</p>
-                <p class="text-sm font-700 text-gray-800">Pon–Pet: 08:00h–16:30h</p>
-                <p class="text-xs text-slate-soft">Subota: 08:00h–13:00h</p>
+
+              <!-- [EDITABLE: CONTACT_HOURS] -->
+              <div
+                class="flex items-center gap-4 bg-white rounded-3xl p-5 shadow-card"
+              >
+                <div
+                  class="w-12 h-12 bg-cream-warm border border-gray-100 rounded-2xl flex items-center justify-center flex-shrink-0"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-5 h-5 text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-soft font-500 mb-0.5">
+                    Radno vreme
+                  </p>
+                  <p class="text-sm font-700 text-gray-800">
+                    Pon–Pet: 08:00h–16:30h
+                  </p>
+                  <p class="text-xs text-slate-soft">Subota: 08:00h–13:00h</p>
+                </div>
+              </div>
+
+              <!-- [EDITABLE: MAP_IFRAME] -->
+              <div class="rounded-3xl overflow-hidden shadow-card">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2298.7790127615294!2d20.954664376214815!3d44.36912587107713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4750cf0039e191e3%3A0xb79473eb871d3c5f!2sFizio%20Detora!5e1!3m2!1ssr!2srs!4v1779885344569!5m2!1ssr!2srs"
+                  width="100%"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Lokacija Fizio Detora na Google Maps"
+                  aria-label="Mapa sa lokacijom klinike"
+                >
+                </iframe>
               </div>
             </div>
-
-            <!-- Google Maps iframe -->
-            <!-- [EDITABLE: MAP_IFRAME] - Idite na Google Maps, nađite vašu lokaciju,
-                 kliknite Deli > Ugradi kartu, kopirajte src URL iz iframe-a i zalepite ga ovde -->
-            <div class="rounded-3xl overflow-hidden shadow-card">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2298.7790127615294!2d20.954664376214815!3d44.36912587107713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4750cf0039e191e3%3A0xb79473eb871d3c5f!2sFizio%20Detora!5e1!3m2!1ssr!2srs!4v1779885344569!5m2!1ssr!2srs"
-                width="100%"
-                height="200"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title="Lokacija Fizio Detora klinike na Google Maps"
-                aria-label="Mapa sa lokacijom klinike">
-              </iframe>
-            </div>
-
           </div>
         </div>
+      </section>
+    </main>
 
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ============================================================
+    <!-- ============================================================
        FOOTER
        ============================================================ -->
-  <footer class="bg-gray-800 text-white py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-
-        <!-- Logo & opis -->
-        <div>
-          <!-- [EDITABLE: FOOTER_LOGO] -->
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-9 h-9 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center" aria-hidden="true">
-              <img src="assets/images/logo.webp" alt="FizioDetora logo" class="w-full h-full rounded-full object-contain" />
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <!-- Logo & opis -->
+          <div>
+            <!-- [EDITABLE: FOOTER_LOGO] -->
+            <div class="flex items-center gap-2 mb-4">
+              <div
+                class="w-9 h-9 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center"
+                aria-hidden="true"
+              >
+                <img
+                  src="assets/images/logo.webp"
+                  alt="FizioDetora logo"
+                  class="w-full h-full rounded-full object-contain"
+                />
+              </div>
+              <span class="text-lg font-700"
+                >Fizio<span class="text-secondary-light">Detora</span></span
+              >
             </div>
-            <span class="text-lg font-700">Fizio<span class="text-primary-light">Detora</span></span>
+            <!-- [EDITABLE: FOOTER_DESC] -->
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Specijalizovana ambulanta za fizioterapiju i neurorizvojnu
+              rehabilitaciju dece. Vaš partner u svakom koraku razvoja.
+            </p>
           </div>
-          <!-- [EDITABLE: FOOTER_DESC] -->
-          <p class="text-gray-400 text-sm leading-relaxed">Specijalizovana klinika za fizioterapiju i neurorizvojnu rehabilitaciju dece. Vaš partner u svakom koraku razvoja.</p>
+
+          <!-- Brze veze -->
+          <div>
+            <h4
+              class="font-700 text-sm mb-4 text-gray-300 uppercase tracking-wide"
+            >
+              Brze veze
+            </h4>
+            <!-- [EDITABLE: FOOTER_LINKS] -->
+            <ul class="space-y-2" role="list">
+              <li>
+                <a
+                  href="#usluge"
+                  class="text-gray-400 text-sm hover:text-white transition-colors"
+                  >Naše usluge</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#o-nama"
+                  class="text-gray-400 text-sm hover:text-white transition-colors"
+                  >O nama</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#iskustva"
+                  class="text-gray-400 text-sm hover:text-white transition-colors"
+                  >Iskustva roditelja</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#faq"
+                  class="text-gray-400 text-sm hover:text-white transition-colors"
+                  >Česta pitanja</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#kontakt"
+                  class="text-gray-400 text-sm hover:text-white transition-colors"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Socijalne mreže -->
+          <div>
+            <h4
+              class="font-700 text-sm mb-4 text-gray-300 uppercase tracking-wide"
+            >
+              Pratite nas
+            </h4>
+            <!-- [EDITABLE: SOCIAL_LINKS] -->
+            <div class="flex gap-3">
+              <a
+                href="https://www.facebook.com/fizio.detora/"
+                class="w-9 h-9 bg-gray-700 rounded-xl flex items-center justify-center hover:bg-primary transition-colors"
+                aria-label="Facebook stranica"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/fiziodetora/"
+                class="w-9 h-9 bg-gray-700 rounded-xl flex items-center justify-center hover:bg-primary transition-colors"
+                aria-label="Instagram profil"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.tiktok.com/@fizio.detora"
+                class="w-9 h-9 bg-gray-700 rounded-xl flex items-center justify-center hover:bg-primary transition-colors"
+                aria-label="TikTok nalog"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!-- [EDITABLE: FOOTER_CONTACT_INFO] -->
+            <div class="mt-4 space-y-1">
+              <p class="text-gray-400 text-sm">📞 +381 600149992</p>
+              <p class="text-gray-400 text-sm">✉️ fiziodetora@yahoo.com</p>
+            </div>
+          </div>
         </div>
 
-        <!-- Brze veze -->
-        <div>
-          <h4 class="font-700 text-sm mb-4 text-gray-300 uppercase tracking-wide">Brze veze</h4>
-          <!-- [EDITABLE: FOOTER_LINKS] -->
-          <ul class="space-y-2" role="list">
-            <li><a href="#usluge"   class="text-gray-400 text-sm hover:text-white transition-colors">Naše usluge</a></li>
-            <li><a href="#o-nama"   class="text-gray-400 text-sm hover:text-white transition-colors">O nama</a></li>
-            <li><a href="#iskustva" class="text-gray-400 text-sm hover:text-white transition-colors">Iskustva roditelja</a></li>
-            <li><a href="#faq"      class="text-gray-400 text-sm hover:text-white transition-colors">Česta pitanja</a></li>
-            <li><a href="#kontakt"  class="text-gray-400 text-sm hover:text-white transition-colors">Kontakt</a></li>
-          </ul>
-        </div>
-
-        <!-- Socijalne mreže -->
-        <div>
-          <h4 class="font-700 text-sm mb-4 text-gray-300 uppercase tracking-wide">Pratite nas</h4>
-          <!-- [EDITABLE: SOCIAL_LINKS] - Zamenite # sa vašim URL-ovima -->
-          <div class="flex gap-3">
-            <a href="https://www.facebook.com/fizio.detora/" class="w-9 h-9 bg-gray-700 rounded-xl flex items-center justify-center hover:bg-primary transition-colors" aria-label="Facebook stranica">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-            <a href="//www.instagram.com/fiziodetora/" class="w-9 h-9 bg-gray-700 rounded-xl flex items-center justify-center hover:bg-primary transition-colors" aria-label="Instagram profil">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-            </a>
-            <a href="https://www.tiktok.com/@fizio.detora" class="w-9 h-9 bg-gray-700 rounded-xl flex items-center justify-center hover:bg-primary transition-colors" aria-label="TikTok nalog">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/>
-              </svg>
-            </a>
-          </div>
-          <!-- [EDITABLE: FOOTER_CONTACT_INFO] -->
-          <div class="mt-4 space-y-1">
-            <p class="text-gray-400 text-sm">📞 +381 600149992</p>
-            <p class="text-gray-400 text-sm">✉️ fiziodetora@yahoo.com</p>
+        <div
+          class="border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500"
+        >
+          <!-- [EDITABLE: COPYRIGHT] -->
+          <p>© 2026 Fizio Detora. Sva prava zadržana.</p>
+          <div class="flex gap-4">
+            <!-- [EDITABLE: FOOTER_LEGAL_LINKS] -->
+            <a href="#" class="hover:text-gray-300 transition-colors"
+              >Politika privatnosti</a
+            >
+            <a href="#" class="hover:text-gray-300 transition-colors"
+              >Uslovi korišćenja</a
+            >
           </div>
         </div>
-
       </div>
+    </footer>
 
-      <div class="border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-        <!-- [EDITABLE: COPYRIGHT] - Godina i naziv klinike -->
-        <p>© 2026 FizioDetora. Sva prava zadržana.</p>
-        <div class="flex gap-4">
-          <!-- [EDITABLE: FOOTER_LEGAL_LINKS] - Politika privatnosti i uslovi -->
-          <a href="#" class="hover:text-gray-300 transition-colors">Politika privatnosti</a>
-          <a href="#" class="hover:text-gray-300 transition-colors">Uslovi korišćenja</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <!-- Scroll-to-top dugme -->
+    <button
+      id="scroll-top"
+      class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-2xl shadow-soft-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-primary-dark hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 z-40"
+      aria-label="Skrolujte na vrh"
+    >
+      <svg
+        class="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2.5"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
 
-  <!-- Scroll-to-top dugme -->
-  <button id="scroll-top" class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-2xl shadow-soft-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-primary-dark hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 z-40" aria-label="Skrolujte na vrh">
-    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
-  </button>
-
-  <!-- JavaScript -->
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
