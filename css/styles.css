@@ -1,22 +1,19 @@
-/* ================================================================
-   FizioKid – Klinički Template
-   Vlastiti CSS (dopuna za Tailwind)
-   ================================================================ */
+.font-500 {
+  font-weight: 500;
+}
+.font-600 {
+  font-weight: 600;
+}
+.font-700 {
+  font-weight: 700;
+}
 
-/* ----------------------------------------------------------------
-   [EDITABLE: FONT_WEIGHT_UTILITIES]
-   Quicksand koristi font-weight 400–700
-   ---------------------------------------------------------------- */
-.font-500 { font-weight: 500; }
-.font-600 { font-weight: 600; }
-.font-700 { font-weight: 700; }
-
-/* ----------------------------------------------------------------
-   Navbar — efekt stakla pri skrolovanju (dodaje se JS-om)
-   ---------------------------------------------------------------- */
 #navbar {
   background-color: transparent;
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    backdrop-filter 0.3s ease,
+    box-shadow 0.3s ease;
 }
 #navbar.scrolled {
   background-color: rgba(250, 250, 247, 0.92);
@@ -24,10 +21,6 @@
   -webkit-backdrop-filter: blur(16px);
   box-shadow: 0 1px 24px rgba(0, 0, 0, 0.06);
 }
-
-/* ----------------------------------------------------------------
-   Hamburger meni animacija
-   ---------------------------------------------------------------- */
 #menu-btn.is-open .hamburger-line:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
@@ -38,69 +31,50 @@
 #menu-btn.is-open .hamburger-line:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
-
-/* ----------------------------------------------------------------
-   Reveal animacije — Intersection Observer
-   Elementi počinju nevidljivi, JS dodaje .is-visible klasu
-   ---------------------------------------------------------------- */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s ease;
   transition-delay: var(--delay, 0ms);
 }
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* ----------------------------------------------------------------
-   Smooth scroll za sve ankere
-   ---------------------------------------------------------------- */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px; /* visina navbara */
 }
-
-/* ----------------------------------------------------------------
-   FAQ Accordion — animacija visine
-   ---------------------------------------------------------------- */
 .faq-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.35s ease, padding 0.35s ease;
+  transition:
+    max-height 0.35s ease,
+    padding 0.35s ease;
   padding-bottom: 0;
 }
 .faq-content.is-open {
   max-height: 500px;
   padding-bottom: 1.25rem;
 }
-/* Rotacija ikone pri otvaranju */
 .faq-item.is-open .faq-icon {
   transform: rotate(180deg);
-  background-color: #A8CBF0; /* primary-light */
+  background-color: #a8cbf0;
 }
-/* Aktivna stavka dobija lagan plavi border */
 .faq-item.is-open {
   box-shadow: 0 0 0 2px rgba(91, 155, 213, 0.3);
 }
-
-/* ----------------------------------------------------------------
-   Slider — touch/swipe podrška
-   ---------------------------------------------------------------- */
 #slider-wrapper {
   touch-action: pan-y pinch-zoom;
   user-select: none;
 }
-
-/* ----------------------------------------------------------------
-   Slider dots
-   ---------------------------------------------------------------- */
 .slider-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #A8CBF0;
+  background-color: #a8cbf0;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -109,67 +83,45 @@ html {
 .slider-dot.active {
   width: 24px;
   border-radius: 4px;
-  background-color: #5B9BD5;
+  background-color: #5b9bd5;
 }
 .slider-dot:focus-visible {
-  outline: 2px solid #5B9BD5;
+  outline: 2px solid #5b9bd5;
   outline-offset: 2px;
 }
-
-/* ----------------------------------------------------------------
-   Forma — custom select izgled
-   ---------------------------------------------------------------- */
 select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748B' stroke-width='2.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 1rem center;
   background-size: 1rem;
 }
-
-/* ----------------------------------------------------------------
-   Forma — success / error poruke
-   ---------------------------------------------------------------- */
 #form-message.success {
-  background-color: #C8EDE6;
-  color: #3A7A65;
+  background-color: #c8ede6;
+  color: #3a7a65;
   display: block;
 }
 #form-message.error {
-  background-color: #FECDD3;
-  color: #BE123C;
+  background-color: #fecdd3;
+  color: #be123c;
   display: block;
 }
-
-/* ----------------------------------------------------------------
-   Scroll-to-top dugme — visible state
-   ---------------------------------------------------------------- */
 #scroll-top.visible {
   opacity: 1;
   pointer-events: auto;
 }
-
-/* ----------------------------------------------------------------
-   Aktivni nav link (scroll spy)
-   ---------------------------------------------------------------- */
 .nav-link.active {
-  color: #5B9BD5;
+  color: #5b9bd5;
   font-weight: 700;
 }
-
-/* ----------------------------------------------------------------
-   Focus vidljivost za pristupačnost (WCAG AA)
-   ---------------------------------------------------------------- */
 :focus-visible {
-  outline: 2px solid #5B9BD5;
+  outline: 2px solid #5b9bd5;
   outline-offset: 3px;
   border-radius: 4px;
 }
-
-/* ----------------------------------------------------------------
-   Preferirani reduced motion — isključujemo sve animacije
-   ---------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -183,12 +135,18 @@ select {
     transition: none;
   }
 }
-
-/* ----------------------------------------------------------------
-   Print stilovi
-   ---------------------------------------------------------------- */
 @media print {
-  #navbar, #scroll-top, #slider-prev, #slider-next { display: none !important; }
-  .reveal { opacity: 1 !important; transform: none !important; }
-  section { page-break-inside: avoid; }
+  #navbar,
+  #scroll-top,
+  #slider-prev,
+  #slider-next {
+    display: none !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  section {
+    page-break-inside: avoid;
+  }
 }
